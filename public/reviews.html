@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="section scrollspy" id="pageTop"></div>
+        <!--header-->
+        <div class="row">
+            <a href="#" data-activates="slide-out" class="medium button-collapse hide-on-large-only"><i id="menuButton" class="medium material-icons">menu</i></a>
+            <div class="col m3 s8 white-text">
+                <a href="#" class="brand-logo" id="topLogo"><img src="http://nebula.wsimg.com/e7a9c9f0490cb8d396d19e56a8b9cf0e?AccessKeyId=9094E9E2F84D04C5F2D1&disposition=0&alloworigin=1"></a><br>
+                <div id="logoTop">An autobody shop for people who love cars</div>
+
+            </div>
+            <div class="col m4 white-text center hide-on-med-and-down" style="margin-top: 1%">
+                <h5 id="topStuff"> From Fender Benders to Complete Restorations, we've got you covered!
+                </h5>
+                <!--end header-->
+
+
+            </div>
+            <div class="col m5">
+                <nav class="black">
+                    <div class="nav-wrapper">
+
+                        <!--<a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down"><i class="material-icons">menu</i></a>-->
+
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="/index" id="index">Home</a></li>
+                            <li><a href="/about" id="about">About Us</a></li>
+                            <li><a href="/services" id="services">Services</a></li>
+                            <li><a href="/contact" id="contact">Contact Us</a></li>
+                            <li><a href="/reviews" class="activeNav" id="reviews">Reviews</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+        <!--sideNav hidden on large scrrens-->
+
+        <ul id="slide-out" class="side-nav hide-on-large black darken-2">
+            <li><a href="/index" class="white-text" id="home">Home</a></li>
+            <li><a href="/about" class="white-text" id="about">About Us</a></li>
+            <li><a href="/services" class="white-text" id="services">Services</a></li>
+            <li><a href="/contact" class="white-text" id="contact">Contact Us</a></li>
+            <li><a href="/reviews" class="white-text activeNav" id="reviews">Reviews</a></li>
+
+        </ul>
+
+        <!--end side nav-->
+
+
+
+
+        <!--yelp reviews-->
+        <div class="row">
+            <!--<div class="col s1"></div>-->
+            <!--<div class="col s10">-->
+            <!--<span class="yelp-review" data-review-id="cpT13W7wayCD7OgLaXtjXQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=Oe2SpZLdlwYrQSpnwo4VuA" rel="nofollow noopener">Holly C.</a>'s <a href="https://www.yelp.com/biz/mcneills-body-shop-monroe?hrid=cpT13W7wayCD7OgLaXtjXQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/axr8npI17DSUWzwg3F-o4Q" rel="nofollow noopener">McNeill's Body Shop</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>    </main>-->
+            <!--</div>-->
+            <!--    <div class="col s1"></div>-->
+
+
+        </div>
+
+        <div class="row">
+            <div class="col l2"></div>
+            <div class="col l8" id="articles"></div>
+            <div class="col l2"></div>
+        </div>
+
+        <div class="row center hide-on-med-and-up">
+            <a href="#pageTop" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_upward</i></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
+        <script>
+            $(document).ready(function() {
+                $('.collapsible').collapsible();
+                $(".button-collapse").sideNav();
+                $('.scrollspy').scrollSpy();
+                $('ul.tabs').tabs('select_tab', 'tab_id');
+            });
+        </script>
+        <script src="./js/reviews.js"></script>
+
+</body>
+
+</html>
