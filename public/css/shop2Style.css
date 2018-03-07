@@ -1,6 +1,7 @@
 /* NEW STYLE FOR SHOP2 */
 
 #nav-mobile li a {
+    margin-top: 15%;
     margin-left: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
@@ -15,7 +16,7 @@
 }
 #para1{
     max-width: 2500px;
-    max-height: 500px;
+    max-height: 800px;
     height: 100%;
     width: 100%;
 }
@@ -26,7 +27,7 @@
     transform: translate(25%, -50%);
 }
 
-.parralaxText h2 {
+.parralaxText, h2 {
     font-weight: bolder;
     text-shadow: 2px 2px grey;
 }
@@ -46,8 +47,8 @@
 
 }
 
-#nav-mobile {
-    margin-top: 30px;
+#navMain {
+    /*margin-top: 30px;*/
     margin-right: 40px;
 }
 
@@ -90,5 +91,29 @@
 }
 
 body {
-    background: #212121;
+    /*background: #212121;*/
+    background-color: black;
+}
+
+.tabList {
+    /*margin-top: 5%;*/
+   /*margin-left: 15%;*/
+   
+}
+
+.tabImg{
+    max-height: 400px;
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+.activeNav{
+     color: red;   
+    
+}
+
+
+#briggsLogo{
+    margin-left: 25%;
 }

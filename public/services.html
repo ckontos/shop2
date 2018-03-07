@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop2Style2.css" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 
@@ -15,21 +15,21 @@
     <header></header>
     <main>
 
-        <div class="section scrollspy" id="pageTop"></div>
-        <div class="row">
-            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i id="menuButton" class="medium material-icons">menu</i></a>
-            <div class="col l3 s8 white-text">
-                <a href="#" class="brand-logo" id="topLogo"><img src="http://nebula.wsimg.com/e7a9c9f0490cb8d396d19e56a8b9cf0e?AccessKeyId=9094E9E2F84D04C5F2D1&disposition=0&alloworigin=1"></a><br>
-                <div id="logoTop" class="center">An autobody shop for people who love cars</div>
-
+        <div class="section scrollspy black" id="pageTop"></div>
+        <div class="row black">
+        <div class="row black">
+            <div class="col s12 center">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i id="menuButton" class="white-text medium material-icons">menu</i></a>
             </div>
-            <div class="col l4 white-text center hide-on-med-and-down">
-                <h5 id="topStuff"> From Fender Benders to Complete Restorations, we've got you covered!
-                </h5>
-
-
+            <div class="col l6 s12 hide-on-med-and-up">
+                <img id="briggsLogo" src="./images/briggsLogo.jpeg">
             </div>
-            <div class="col l5">
+            </div>
+            <div class="row black">
+                 <div class="col l6 s10 hide-on-small-only">
+                <img id="briggsLogo" src="./images/briggsLogo.jpeg">
+            </div>
+            <div class="col l6">
                 <nav class="black">
                     <div class="nav-wrapper">
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -43,7 +43,7 @@
                     </div>
                 </nav>
             </div>
-
+            </div>
         </div>
 
 
@@ -63,42 +63,90 @@
 
         <!--begin main area-->
         <div class="row">
-            <!--image here-->
-            <br>
-            <h2 class="center white-text hide-on-large-only">Past, Present, and Future Projects! </h2><br>
+         <div class="cardArea">
+                    <ul id="tabs" class="tabs black darken-2 center">
+                        <li class="tab col l4 s4"><a href="#test-swipe-1">Body</a></li>
+                        <li class="tab col l4 s4"><a class="active" href="#test-swipe-2">Paint</a></li>
+                        <li class="tab col l4 s4"><a href="#test-swipe-3">Auto</a></li>
+                    </ul>
+                    <div id="test-swipe-1" class="col l12 black center"><br>
+                    <div class="row">
+                      <img class="tabImg center hide-on-med-and-up" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347980-callout2.png">
 
-            <div class="row">
-                <div class="col l4"></div>
+                    </div>
+                    <div class="row tabArea">
+                        <div class="col l6 tabList">
+                             <h5 class="white-text center">
+                            Body Repair Services:
+                        </h5>
+                        <ul class="green-text">
+                            <li>Frame straightening</li>
+                            <li>Collision Repair</li>
+                            <li>Paintless Dent Removal</li>
+                        </ul>
+                         <h5 class="white-text center">Have you been in an accident and need body work completed on your vehicle? Then bring it to the auto body repair experts at Briggs Collision in Concord, NC. You can count on our experience and knowledge to get your vehicle fixed and looking its best when you drive it off our lot. We have more than 20 years of combined experience in repairing vehicles.</h5>
+                        </div>
+                        <div class="col l6">
+                             <img class="tabImg center hide-on-small-only" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347980-callout2.png">
+                        </div>
+                    </div>
+                       
+                        
+                    </div>
+                    <div id="test-swipe-2" class="col l12 black center"><br>
+                    <div class="row">
+                     <img class="tabImg center hide-on-med-and-up" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347981-callout3.png">
 
-                <div class="col l6" id="imagesRow1">
-                    <!--carousel goes here-->
+                    </div>
+                    <div class="row tabArea">
+                        <div class="col l6 tabList">
+                              <h5 class="white-text center">
+                            Paint Services:
+                        </h5>
+                        <ul class="green-text">
+                            <li>Color Matching</li>
+                            <li>Custom Paint Jobs</li>
+                        </ul>
+                         <h5 class="white-text center">
+                           Family owned and operated with more than 20 years combined experience, Briggs Collision provides the best in auto paint services to Concord, NC and the surrounding areas. Whether you need your color matched or are looking for a custom paint job, our technicians have you covered.</h5>
+                        </div>
+                        <div class="col l6">
+                             <img class="tabImg center hide-on-small-only" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347981-callout3.png">
+                        </div>
+                    </div>
+                       
+                          
+                    </div>
+                    <div id="test-swipe-3" class="col l12 black white-text center"><br>
+                    <div class="row">
+                      <img class="tabImg center hide-on-med-and-up" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347982-callout4.png">
+
+                    </div>
+                    <div class="row tabArea">
+                        <div class="col l6 tabList">
+                             <h5 class="white-text center">
+                            Auto Repairs Services:
+                        </h5>
+                        <ul class="green-text">
+                            <li>Wheel Alignment</li>
+                            <li>Computerized Diagnostics</li>
+                            <li>Emission testing</li>
+                        </ul>
+                         <h5 class="white-text center">
+                           Choosing the right auto repair shop to fix your vehicle is important in getting it back running quickly and correctly. The auto repair experts at Briggs Collision have a combined more than 20 years experience in auto repair and have been serving the Concord, NC area for the last four years. Whether you have a domestic vehicle or a foreign vehicle, we have the knowledge and experience to fix them all.
+                        </h5>
+                        </div>
+                        <div class="col l6">
+                              <img class="tabImg center hide-on-small-only" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347982-callout4.png">
+                        </div>
+                        
+                    </div>
+                     
+                       
+                       
+                    </div>
                 </div>
-            </div>
-            <div class="col l2"></div>
-
-            <h2 id="otherFuture" class="center white-text hide-on-med-and-down">Past, Present, and Future Projects! </h2>
-        </div>
-        <!--<div class="row">-->
-        <!--    <div id="imagesRow1"></div>-->
-        <!--images1 goes here-->
-        <!--</div>-->
-        <div class="row">
-            <div class="col l3 m10">
-                <h4 class="white-text center" id="needed">Need something louvered?</h4>
-            </div>
-            <!--</div>-->
-            <div class="col l9 m10">
-                <!--images2 goes here-->
-                <div id="imagesRow2"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="row">
-                <h3 class="white-text center">How about antique Office Furniture? We'd paint your house if you could bring it to us!</h3>
-            </div>
-            <div id="imagesRow3"></div>
-            <!--images3 goes here-->
-        </div>
+                </div>
         <!--end main-->
 
 
