@@ -10,6 +10,15 @@
     color: #e57373;
 }
 
+.collapsible{
+    margin-top: 15%;
+}
+#para1{
+    max-width: 2500px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+}
 .parralaxText {
     position: absolute;
     top: 50%;
@@ -67,11 +76,13 @@
 }
 
 #facebookMain {
+    margin-top: 20%;
     height: 100px;
     width: 250px;
 }
 
 #collapseDivTitle {
+    margin-top: 5%;
     text-align: center;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
