@@ -26,6 +26,10 @@
     text-shadow: 2px 2px grey;
 }
 
+.parralax-container{
+    overflow: auto;
+}
+
 .cardArea {
     padding-top: 40px;
 }
