@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/shop2Style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body>
+<body class="animated">
     <header></header>
     <main>
         <nav class="grey darken-4" id="navBar">
             <div class="nav-wrapper">
                 <!--<a href="#" class="brand-logo" id="topLogo"><img src="http://nebula.wsimg.com/e7a9c9f0490cb8d396d19e56a8b9cf0e?AccessKeyId=9094E9E2F84D04C5F2D1&disposition=0&alloworigin=1"></a>-->
-                <ul id="navMain" class="right hide-on-small-only">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/index" class="activeNav" id="home">Home</a></li>
                     <li><a href="/about" id="about">About Us</a></li>
                     <li><a href="/services" id="services">Services</a></li>
@@ -27,12 +27,145 @@
             </div>
         </nav>
 
+        <!--=========================== NEW CODE LAYOUT ====================================-->
+
+        <div class="indexContainer">
+
+            <div class="img1"></div>
+            <div class="info">
+                <!------- FIRST DIV CONTENTS -------->
+                <div class="row">
+                    <div class="col s1"></div>
+                    <div class="col s10" id="indexDivOne">
+                        <h3>Briggs Collision provides top-notch auto body and auto paint services to Concord, NC and the surrounding areas. Family owned and operated, we have more than 20 years combined experience. We repair all makes and models, foreign
+                            and domestic, and are a direct repair shop for most big name insurance companies. </h3>
+                    </div>
+                    <div class="col s1"></div>
+                </div>
+                <!------- END FIRST DIV CODE -------->
+            </div>
+            <div class="img2"></div>
+            <div class="info">
+                <!------- 2nd DIV CONTENTS -------->
+
+                <div class="row" id="indexDivTwo">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="card-panel red lighten-2 center-align">
+                                    <span class="white-text">
+                                        <i class="large material-icons">build</i><br>
+                                        <h3>Body Repair</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col s4">
+                                <div class="card-panel red lighten-2 center-align">
+                                    <span class="white-text">
+                                        <i class="large material-icons">format_color_fill</i><br>
+                                        <h3>Auto Paint Repair</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col s4">
+                                <div class="card-panel red lighten-2 center-align">
+                                    <span class="white-text">
+                                        <i class="large material-icons">directions_car</i><br>
+                                        <h3>Auto Repairs</h3>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <a class="waves-effect waves-light btn-large grey darken-4" id="learnMoreBtn">Learn More</a>
+                    </div>
+                </div>
+
+                <!------- END 2nd DIV CODE -------->
+            </div>
+            <div class="img3"></div>
+            <div class="info">
+                <!------- 3rd DIV CONTENTS -------->
+                <h1>INFO</h1>
+                <!------- END 3rd DIV CODE -------->
+            </div>
+            <div class="img4"></div>
+            <div class="info">
+                <!------- 4th DIV CONTENTS -------->
+                <div class="row" id="indexDivFour">
+                    <div class="row cardArea">
+                        <div class="col s2"></div>
+                        <div class="col s8">
+                            <div class="card grey darken-3" id="searchCard">
+                                <div class="card-content black-text">
+                                    <span class="card-title white-text center-align">Store Information</span>
+                                    <div class="row">
+                                        <div class="col l12">
+                                            <ul class="collapsible popout" data-collapsible="accordion">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="material-icons">add_location</i>Location</div>
+
+                                                    <div class="collapsible-body white black-text center">
+                                                        <p>1909 West Roosevelt Blvd, Monroe NC 28112
+                                                        </p>
+                                                        <br>
+                                                        <iframe id="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.17557924564!2d-80.55638148475965!3d35.00230968035822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885430b79ec8988f%3A0xcac846c2bab07149!2s1909+W+Roosevelt+Blvd%2C+Monroe%2C+NC+28110!5e0!3m2!1sen!2sus!4v1520042457792"
+                                                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i class="material-icons">call</i>Call</div>
+
+                                                    <div class="collapsible-body white black-text left-align">
+                                                        <p>704-238-9920</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header white"><i class="material-icons">timer</i>Hours</div>
+
+                                                    <div class="collapsible-body white black-text left-align">
+                                                        <p>Monday - Friday: 8 am - 5 pm <br> Saturday: Call for an appointment<br> Sunday: Closed
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s2"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s3"></div>
+                        <div class="col s4">
+                            <img id="shopPhoto" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347979-callout1.png">
+                        </div>
+                        <div class="col s2">
+                            <a href="https://www.facebook.com/McneillsBodyShop/">
+                                        <img id="facebookMain" src="/images/facebook4.jpg">
+                                    </a>
+                        </div>
+                        <div class="col s3"></div>
+                    </div>
+
+                </div>
+                <!------- END 4th DIV CODE -------->
+            </div>
+
+        </div>
+        <!--============================ END CODE LAYOUT ========================================--->
 
 
 
-        <!--sideNav hidden on large scrrens-->
+        <!--    sideNav hidden on large scrrens-->
 
-        <ul id="slide-out" class="left side-nav hide-on-med-and-up black darken-2">
+        <ul id="slide-out" class="side-nav hide-on-large black darken-2">
             <li><a href="/index" class="white-text activeNav" id="home">Home</a></li>
             <li><a href="/about" class="white-text" id="about">About Us</a></li>
             <li><a href="/services" class="white-text" id="services">Services</a></li>
@@ -40,90 +173,11 @@
             <li><a href="/reviews" class="white-text" id="reviews">Reviews</a></li>
         </ul>
 
-        <!--end side nav-->
+        <!--    end side nav-->
 
-        <div class="row" id="indexIntro">
-            <div class="parallax-container">
-                <div class="parallax"><img id="para1" src="http://legacy.ybsitecenter.com/multi-images/cdr/bri/31600/1347858-siteheader.jpg">
-                    <div class="col l2 s2"></div>
-                    <div class="col l8 s8 parralaxText center-align white-text">
-                        <!--<h2>From fender benders to complete restorations, we've got you covered!</h2>-->
-                    </div>
-                    <div class="col l2 s2"></div>
-                </div>
-            </div>
-        </div>
-      
-       <!--parallax image 2-->
-           <div class="parallax-container parallax2">
-               <h3 id="collapseDivTitle">Briggs Collision provides top-notch auto body and auto paint services to Concord, NC and the surrounding areas. Family owned and operated, we have more than 20 years combined experience. We repair all makes and models, foreign and domestic and are a direct repair shop for most big name insurance companies. </h3>
-            <div class="parallax">
-                <img src="images/shop2.jpg">
-            
-            </div>
-        </div>
 
-     
-        <div class="row" id="collapseDiv">
-            <div class="row cardArea">
-                
-                <div class="col s4">
-                    <!--<div class="card grey darken-3" id="searchCard">-->
-                        <div class="card-content black-text">
-                            <span class="card-title black-text center-align"></span>
-                            <div class="row">
-                                <div class="col l12">
-                                    <ul class="collapsible popout" data-collapsible="accordion">
-                                        <li>
-                                            <div class="collapsible-header"><i class="material-icons">add_location</i>Location</div>
 
-                                            <div class="collapsible-body white black-text center">
-                                                <p>1909 West Roosevelt Blvd, Monroe NC 28112
-                                                </p>
-                                                <br>
-                                                <iframe id="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.17557924564!2d-80.55638148475965!3d35.00230968035822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885430b79ec8988f%3A0xcac846c2bab07149!2s1909+W+Roosevelt+Blvd%2C+Monroe%2C+NC+28110!5e0!3m2!1sen!2sus!4v1520042457792"
-                                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header"><i class="material-icons">call</i>Call</div>
-
-                                            <div class="collapsible-body white black-text left-align">
-                                                <p>704-238-9920</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="collapsible-header white"><i class="material-icons">timer</i>Hours</div>
-
-                                            <div class="collapsible-body white black-text left-align">
-                                                <p>Monday - Friday: 8 am - 5 pm <br> Saturday: Call for an appointment<br> Sunday: Closed
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    <!--</div>-->
-                </div>
-
-                <div class="col s4">
-                    <img id="shopPhoto" src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1347979-callout1.png">
-                </div>
-
-                <div class="col s4">
-                    <a href="https://www.facebook.com/McneillsBodyShop/">
-                        <img id="facebookMain" src="/images/facebook4.jpg">
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        
-       
-        
-        <!--------------------- column ----------------------------->
+        <!--    ------------------- column ----------------------------->
 
     </main>
 
@@ -133,16 +187,17 @@
             <div class="col l4 s1"></div>
             <div class="col l4 s10 center">
                 <a href="https://www.facebook.com/McneillsBodyShop/">
-                    <img class="hide-on-med-and-up center" id="facebookMain" src="/images/facebook4.jpg">
-                    </a>
+                        <img class="hide-on-med-and-up center" id="facebookMain" src="/images/facebook4.jpg">
+                        </a>
             </div>
             <div class="col l4 s1"></div>
-
         </div>
     </footer>
     <div class="row center hide-on-med-and-up">
         <a href="#pageTop" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_upward</i></a>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>

@@ -1,7 +1,6 @@
 /* NEW STYLE FOR SHOP2 */
 
 #nav-mobile li a {
-    margin-top: 15%;
     margin-left: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
@@ -11,25 +10,15 @@
     color: #e57373;
 }
 
-.collapsible{
-    margin-top: 15%;
-}
-#para1{
-    max-width: 2500px;
-    max-height: 800px;
-    height: 100%;
-    width: 100%;
-}
-.parralaxText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -50%);
+.collapsible {
+    margin-top: 5%;
 }
 
-.parralaxText, h2 {
-    font-weight: bolder;
-    text-shadow: 2px 2px grey;
+#para1 {
+    max-width: 2500px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .cardArea {
@@ -47,8 +36,8 @@
 
 }
 
-#navMain {
-    /*margin-top: 30px;*/
+#nav-mobile {
+    margin-top: 30px;
     margin-right: 40px;
 }
 
@@ -82,38 +71,123 @@
     width: 250px;
 }
 
-#collapseDivTitle {
-    margin-top: 5%;
-    text-align: center;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 50px;
-}
-
 body {
-    /*background: #212121;*/
-    background-color: black;
+    background-color: #212121;
 }
 
-.tabList {
-    /*margin-top: 5%;*/
-   /*margin-left: 15%;*/
-   
+.img1 {
+    height: 390px;
+    background-attachment: fixed;
+    background-position: 0% 29%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.tabImg{
-    max-height: 400px;
-    max-width: 400px;
-    height: 100%;
+.img2,
+.img3,
+.img4 {
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url("http://legacy.ybsitecenter.com/multi-images/cdr/bri/31600/1347858-siteheader.jpg");
+    background-color: #424242;
+}
+
+.img2 {
+    background-image: url("../images/shop3.jpg");
+}
+
+.img3 {
+    background-image: url("../images/paint.jpg");
+}
+
+.img4 {
+    background-image: url("../images/car.jpg");
+}
+
+.info {
     width: 100%;
+    height: 700px;
+    color: white;
 }
 
-.activeNav{
-     color: red;   
-    
+@keyframes appears {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+.animated {
+    animation: appears 2.5s
+}
 
-#briggsLogo{
-    margin-left: 25%;
+/*mobile view*/
+
+@media(max-width: 800px) {
+
+    .img2,
+    .img3,
+    .img4 {
+        height: 350px;
+    }
+
+    .img1 {
+        height: 190px;
+    }
+    .info {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+#indexDivOne {
+    text-align: center;
+    position: relative;
+    transform: translateY(40%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#searchCard {
+    border-radius: 25px;
+}
+
+#facebookMain {
+    transform: translateY(40%);
+}
+
+#indexDivTwo {
+    margin-top: 250px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#learnMoreBtn {
+    padding-top: 25px;
+    padding-bottom: 75px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 50px;
+    border: solid;
+    border-color: white;
+    border-width: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#learnMoreBtn:hover {
+    background: white;
+    border-color: black;
+
 }
