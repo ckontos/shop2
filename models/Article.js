@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var ArticleSchema = new Schema({
+var ReviewSchema = new Schema({
   author: {
     type: String,
     required: true
@@ -9,9 +9,12 @@ var ArticleSchema = new Schema({
   
   date: {
     type: String,
-    required: true
+    required: false
   },
-  
+  rating: {
+    type: String,
+    required: false
+  },
     summary: {
       type: String,
       required: true
@@ -20,7 +23,7 @@ var ArticleSchema = new Schema({
 });
 
 
-var Article = mongoose.model("Article", ArticleSchema);
+var Review = mongoose.model("Review", ReviewSchema);
 
 // Export the Article model
-module.exports = Article;
+module.exports = Review;

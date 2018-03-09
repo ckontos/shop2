@@ -22,7 +22,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/articles";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reviews";
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, { });
