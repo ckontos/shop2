@@ -113,9 +113,18 @@ body {
     
 }
 
+#facebookContact, #facebookContact2{
+    max-height: 120px;
+    max-width: 120px;
+    height: 100%;
+    width: 100%;
+}
+
+
 
 #briggsLogo{
-    margin-left: 25%;
+    margin-left: 33%;
+   
 }
 
 .tabArea{
@@ -202,6 +211,8 @@ body {
 
 }
 
+
+
 #navMain {
     /*margin-top: 30px;*/
     margin-right: 40px;
@@ -216,9 +227,9 @@ body {
     font-size: 18px;
 }
 
-#mapPicMain2 {
-    height: 300px;
-    width: 300px;
+.mapPicMain2 {
+    height: 400px;
+    width: 400px;
 }
 
 #collapseDiv {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/shop2Style2.css" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 
@@ -18,19 +18,12 @@
         <!--header-->
         <div class="row">
             <a href="#" data-activates="slide-out" class="medium button-collapse hide-on-large-only"><i id="menuButton" class="medium material-icons">menu</i></a>
-            <div class="col m3 s8 white-text">
-                <a href="#" class="brand-logo" id="topLogo"><img src="http://nebula.wsimg.com/e7a9c9f0490cb8d396d19e56a8b9cf0e?AccessKeyId=9094E9E2F84D04C5F2D1&disposition=0&alloworigin=1"></a><br>
-                <div id="logoTop">An autobody shop for people who love cars</div>
+            <div class="col l6 m3 s8 white-text">
+                <a href="#" class="brand-logo" id="briggsLogo"><img src="./images/briggsLogo.jpeg"></a><br>
 
             </div>
-            <div class="col m4 white-text center hide-on-med-and-down" style="margin-top: 1%">
-                <h5 id="topStuff"> From Fender Benders to Complete Restorations, we've got you covered!
-                </h5>
-                <!--end header-->
 
-
-            </div>
-            <div class="col m5">
+            <div class="col l6 m5">
                 <nav class="black">
                     <div class="nav-wrapper">
 
@@ -67,30 +60,110 @@
 
         <!--begin main area-->
         <div class="row">
-            <div class="col l4">
-                <!--put map here-->
-                <iframe id="mapPic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.17557924564!2d-80.55638148475965!3d35.00230968035822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885430b79ec8988f%3A0xcac846c2bab07149!2s1909+W+Roosevelt+Blvd%2C+Monroe%2C+NC+28110!5e0!3m2!1sen!2sus!4v1520042457792"
-                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+            <div class="col l7">
+                <!--put info for stores here-->
                 <div class="row">
-                    <div class="col l4">
-                        <i class="material-icons call white-text right medium">call</i>
-                    </div>
-                    <div class="col l8">
-                        <h5 class="white-text">704-238-9920</h5>
-                    </div>
+                    <!--concord location-->
+                    <div class="col l6 center">
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">add_location</i>Concord Location</div>
 
-                </div>
-                <a href="https://www.facebook.com/McneillsBodyShop/">
-                    <img class="hide-on-small-only" id="facebookContact" src="/images/facebook4.jpg">
+                                <div class="collapsible-body white black-text center">
+                                    <p class="center">3900 Concord Pkwy S, Concord, NC 28027
+                                    </p>
+                                    <br>
+                                    <iframe class="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104113.24885142558!2d-80.73806128811725!3d35.367084793926395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541adaf30798b9%3A0x5c30a35004f58c2b!2sBriggs+Collision!5e0!3m2!1sen!2sus!4v1520564851348"
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">call</i>Call</div>
+
+                                <div class="collapsible-body white black-text left-align">
+                                    <p class="center">704-782-4569</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header white"><i class="material-icons">timer</i>Hours</div>
+
+                                <div class="collapsible-body white black-text left-align">
+                                    <p class="center">Monday - Friday: 8 am - 6 pm <br> Saturday: Closed <br> Sunday: Closed
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="input-field">
+                                <a href="#calendarModal" id="checkTimes" class="btn waves-effect waves-light red darken-4 center modal-trigger"><span class="white-text">Check Available Appointments</span></a>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <a href="https://www.facebook.com/pages/Briggs-Collision/132826630101684">
+                    <img id="facebookContact2" src="/images/facebook4.jpg">
                     </a>
+                        </div>
+                    </div>
+                    <!--charlotte location-->
+                    <div class="col l6 center">
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">add_location</i>Charlotte Location</div>
 
+                                <div class="collapsible-body white black-text center">
+                                    <p class="center">8130 Wilkinson Blvd, Charlotte, NC 28214
+                                    </p>
+                                    <br>
+                                    <iframe class="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104275.07828845688!2d-81.04824809171747!3d35.24142082509844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8856a2b048603f11%3A0x33838c83a243dddb!2sBriggs+Collision%2C+8130+Wilkinson+Blvd%2C+Charlotte%2C+NC+28214!3m2!1d35.241441!2d-80.978208!5e0!3m2!1sen!2sus!4v1520565160586"
+                                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">call</i>Call</div>
+
+                                <div class="collapsible-body white black-text left-align">
+                                    <p class="center">980-938-53550</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header white"><i class="material-icons">timer</i>Hours</div>
+
+                                <div class="collapsible-body white black-text left-align">
+                                    <p class="center">Monday - Friday: 8 am - 6 pm <br>Saturday: Closed<br> Sunday: Closed
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="input-field">
+                                <a href="#calendarModal2" id="checkTimes" class="btn waves-effect waves-light red darken-4 center modal-trigger"><span class="white-text">Check Available Appointments</span></a>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <a href="https://www.facebook.com/pages/Briggs-Collision/163970493959816">
+                    <img id="facebookContact" src="/images/facebook4.jpg">
+                    </a>
+                        </div>
+                    </div>
+                </div>
                 <!--and phone# again-->
+
             </div>
 
-            <div class="col l8">
+            <div class="col l5">
                 <div class="container">
 
                     <form class="col l12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                 <label>Which location would you like to contact?</label>
+                                <select id="whichLocation">
+                                  <option value="" disabled selected></option>
+                                  <option value="charlotte">Charlotte</option>
+                                  <option value="concord">Concord</option>
+                                </select>
+                              </div>
+                        </div>
                         <div class="row">
                             <div class="input-field col l12">
                                 <input id="name" type="text" class="white-text">
@@ -157,6 +230,86 @@
             </div>
             <!--end of modal-->
 
+            <!-- calendar modal 1 -->
+
+            <div id="calendarModal" class="modal blue-grey darken-1">
+                <div class="modal-content">
+                    <iframe id="calendarPic" src="https://calendar.google.com/calendar/embed?src=joshjanculawebpage%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe><br>
+                    <div class="row">
+                        <h5 class="white-text">See an available time you'd like? Schedule it here.</h5>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col l12">
+                                <input id="time" type="text" class="white-text">
+                                <label for="time">Time</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col l12">
+                                <input id="date" type="text" class="white-text">
+                                <label for="date">Date</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field">
+                                <a href="#" id="submitTime" class="btn waves-effect waves-light modal-action modal-close red darken-4 center"><span class="white-text">Submit</span></a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Nope</a>
+                </div>
+            </div>
+
+            </form>
+
+        </div>
+        <!--end of modal-->
+
+
+        <!-- calendar modal 2 -->
+
+        <div id="calendarModal2" class="modal blue-grey darken-1">
+            <div class="modal-content">
+                <iframe src="https://calendar.google.com/calendar/embed?src=jamclashwebpage%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe><br>
+                <div class="row">
+                    <h5 class="white-text">See an available time you'd like? Schedule it here.</h5>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <input id="time2" type="text" class="white-text">
+                            <label for="time">Time</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l12">
+                            <input id="date2" type="text" class="white-text">
+                            <label for="date">Date</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <a href="#" id="submitTime2" class="btn waves-effect waves-light modal-action modal-close red darken-4 center"><span class="white-text">Submit</span></a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Nope</a>
+            </div>
+        </div>
+
+        </form>
+
+        </div>
+        <!--end of modal-->
+
+
         </div>
         </div>
 
@@ -167,18 +320,18 @@
 
     </main>
     <!--need to put facebook and links down here-->
-    <footer class="page-footer black hide-on-med-and-up">
-        <div class="row">
+    <!--<footer class="page-footer black hide-on-med-and-up">-->
+    <!--    <div class="row">-->
 
-            <div class="row">
-                <a href="https://www.facebook.com/McneillsBodyShop/"><img src="images/logo_facebook.png" class="bottomLink center"></a>
-            </div>
-            <div class="row">
-                <p class="footLike center">Like us on FaceBook!</p>
-            </div>
-        </div>
+    <!--        <div class="row">-->
+    <!--            <a href="https://www.facebook.com/McneillsBodyShop/"><img src="images/logo_facebook.png" class="bottomLink center"></a>-->
+    <!--        </div>-->
+    <!--        <div class="row">-->
+    <!--            <p class="footLike center">Like us on FaceBook!</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
 
-    </footer>
+    <!--</footer>-->
     <div class="row center hide-on-med-and-up">
         <a href="#pageTop" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_upward</i></a>
     </div>
@@ -191,6 +344,7 @@
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
             $('.scrollspy').scrollSpy();
+              $('select').material_select();
         });
     </script>
 
