@@ -21,11 +21,6 @@
     width: 100%;
 }
 
-.cardArea {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 #navBar {
     padding-bottom: 100px;
 }
@@ -59,16 +54,16 @@
     background: #212121;
 }
 
-#shopPhoto {
-    height: 260px;
-    width: 400px;
-    margin-top: 10px;
-}
-
 #facebookMain {
-    margin-top: 20%;
     height: 100px;
     width: 250px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#shopPhoto {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 body {
@@ -76,11 +71,12 @@ body {
 }
 
 .img1 {
-    height: 390px;
+    height: 587px;
     background-attachment: fixed;
-    background-position: 0% 29%;
+    background-position: 0 60%;
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 
 .img2,
@@ -94,8 +90,7 @@ body {
 }
 
 .img1 {
-    background-image: url("http://legacy.ybsitecenter.com/multi-images/cdr/bri/31600/1347858-siteheader.jpg");
-    background-color: #424242;
+    background-image: url("../images/briggs.png");
 }
 
 .img2 {
@@ -130,29 +125,17 @@ body {
     animation: appears 2.5s
 }
 
-/*mobile view*/
-
-@media(max-width: 800px) {
-
-    .img2,
-    .img3,
-    .img4 {
-        height: 350px;
-    }
-
-    .img1 {
-        height: 190px;
-    }
-    .info {
-        width: 100%;
-        height: 350px;
-    }
+#indexDivOne {
+    margin-top: 20px;
 }
 
-#indexDivOne {
+#briggsLogo {
+    margin-top: 75px;
+}
+
+#indexDivOneCard {
+    font-size: 32px;
     text-align: center;
-    position: relative;
-    transform: translateY(40%);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -160,16 +143,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#searchCard {
-    border-radius: 25px;
+#freeEstimate {
+    margin-top: 50px;
 }
 
-#facebookMain {
-    transform: translateY(40%);
+#freeEstimateCard {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
 }
 
-#indexDivTwo {
-    margin-top: 250px;
+#scheduleNowBtn {
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#scheduleNowBtn:hover {
+    border-color: black;
+    color: black;
+}
+
+#searchCard {}
+
+#servicesDiv {
+    margin-top: 100px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -189,5 +187,50 @@ body {
 #learnMoreBtn:hover {
     background: white;
     border-color: black;
+}
+
+.card-panel,
+#searchCard,
+#freeEstimateCard {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*mobile view*/
+
+@media only screen and (max-width: 1024px) {
+    #indexDivOneCard {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    #briggsLogo {
+        width: 200px;
+        height: 100px;
+    }
+
+    #indexDivOneCard {
+        font-size: 18px;
+    }
+
+    #learnMoreBtn {
+        padding-top: 25px;
+        padding-bottom: 75px;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 50px;
+        border: solid;
+        border-color: white;
+        border-width: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+
+    #mapPicMain2 {
+        height: 110px;
+        width: 110px;
+    }
 
 }
