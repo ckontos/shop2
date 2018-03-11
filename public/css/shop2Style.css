@@ -125,12 +125,25 @@ body {
     animation: appears 2.5s
 }
 
-#indexDivOne {
-    margin-top: 20px;
+#indexDivOneLogo {
+    margin-top: 125px;
 }
 
 #briggsLogo {
-    margin-top: 75px;
+    width: 500px;
+    height: 200px;
+}
+
+#briggsLogoNav {
+    height: 75px;
+    width: 125px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#mobileNavIcon {
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 #indexDivOneCard {
@@ -202,6 +215,10 @@ body {
 @media only screen and (max-width: 1024px) {
     #indexDivOneCard {
         font-size: 24px;
+    }
+    #briggsLogo {
+        width: 350px;
+        height: 150px;
     }
 }
 

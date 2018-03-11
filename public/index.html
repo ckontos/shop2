@@ -17,7 +17,8 @@
         <div id="pageTop"></div>
         <nav class="grey darken-4" id="navBar">
             <div class="nav-wrapper">
-                <!--<a href="#" class="brand-logo" id="topLogo"><img src="http://nebula.wsimg.com/e7a9c9f0490cb8d396d19e56a8b9cf0e?AccessKeyId=9094E9E2F84D04C5F2D1&disposition=0&alloworigin=1"></a>-->
+                <a href="#" class="brand-logo"><img id="briggsLogoNav" src="./images/briggslogo3.png"></a>
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down" id="mobileNavIcon"><i class="material-icons medium">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/index" class="activeNav" id="home">Home</a></li>
                     <li><a href="/about" id="about">About Us</a></li>
@@ -46,14 +47,14 @@
             <div class="img1"></div>
             <div class="info">
                 <!------- FIRST DIV CONTENTS -------->
-                <div class="row" id="indexDivOne">
+                <div class="row" id="indexDivOneLogo">
                     <div class="col s1"></div>
                     <div class="col s10 center-align">
                         <img id="briggsLogo" src="./images/briggsLogo.jpeg">
                     </div>
                     <div class="col s1"></div>
                 </div>
-                <div class="row">
+                <div class="row" id="indexDivOneText">
                     <div class="col s1"></div>
                     <div class="col s10">
                         <div class="card-panel grey lighten-1 center-align" id="indexDivOneCard">
@@ -220,7 +221,6 @@
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
         });
-
         $("#toTopButton").on('click', function(event) {
             event.preventDefault();
 
