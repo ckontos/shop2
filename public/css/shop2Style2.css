@@ -146,7 +146,11 @@ body {
 /*begin tablets*/
 @media screen and (max-width: 980px) and (min-width: 668px) and (-webkit-min-device-pixel-ratio: 2) {
     
-    
+    .tabImg{
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
     
 }
 
@@ -291,6 +295,7 @@ body {
 .tabArea{
     margin-left: 0%;
 }
+
 
 
 }

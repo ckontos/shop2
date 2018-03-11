@@ -14,33 +14,35 @@
 <body>
     <header></header>
     <main>
-        <div class="section scrollspy" id="pageTop"></div>
-        <!--header-->
-        <div class="row">
-            <a href="#" data-activates="slide-out" class="medium button-collapse hide-on-large-only"><i id="menuButton" class="medium material-icons">menu</i></a>
-            <div class="col l6 m3 s8 white-text">
-                <a href="#" class="brand-logo" id="briggsLogo"><img src="./images/briggsLogo.jpeg"></a><br>
-
+        <div class="section scrollspy black" id="pageTop"></div>
+        <div class="row black">
+            <div class="row black">
+                <div class="col s12 center">
+                    <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i id="menuButton" class="white-text medium material-icons">menu</i></a>
+                </div>
+                <div class="col l5 s12 hide-on-med-and-up">
+                    <img id="briggsLogo" src="./images/briggsLogo.jpeg">
+                </div>
             </div>
+            <div class="row black">
+                <div class="col l5 s10 hide-on-small-only">
+                    <img id="briggsLogo" src="./images/briggsLogo.jpeg">
+                </div>
+                <div class="col l7">
+                    <nav class="black">
+                        <div class="nav-wrapper">
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="/index" id="home">Home</a></li>
+                                <li><a href="/about" id="about">About Us</a></li>
+                                <li><a href="/services" id="services">Services</a></li>
+                                <li><a href="/contact" class="activeNav"id="contact">Contact Us</a></li>
+                                <li><a href="/reviews" id="reviews">Reviews</a></li>
 
-            <div class="col l6 m5">
-                <nav class="black">
-                    <div class="nav-wrapper">
-
-                        <!--<a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down"><i class="material-icons">menu</i></a>-->
-
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="/index" id="index">Home</a></li>
-                            <li><a href="/about" id="about">About Us</a></li>
-                            <li><a href="/services" id="services">Services</a></li>
-                            <li><a href="/contact" class="activeNav" id="contact">Contact Us</a></li>
-                            <li><a href="/reviews" id="reviews">Reviews</a></li>
-
-                        </ul>
-                    </div>
-                </nav>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-
         </div>
 
 
@@ -50,7 +52,7 @@
         <ul id="slide-out" class="side-nav hide-on-large black darken-2">
             <li><a href="/index" class="white-text" id="home">Home</a></li>
             <li><a href="/about" class="white-text" id="about">About Us</a></li>
-            <li><a href="/services" class="white-text" id="services">Services</a></li>
+            <li><a href="/services" class="white-text"id="services">Services</a></li>
             <li><a href="/contact" class="white-text activeNav" id="contact">Contact Us</a></li>
             <li><a href="/reviews" class="white-text" id="reviews">Reviews</a></li>
 
@@ -60,11 +62,11 @@
 
         <!--begin main area-->
         <div class="row">
-            <div class="col l7">
+            <div class="col l7 s12 center">
                 <!--put info for stores here-->
                 <div class="row">
                     <!--concord location-->
-                    <div class="col l6 center">
+                    <div class="col l6 s12 center">
                         <ul class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">add_location</i>Concord Location</div>
@@ -105,7 +107,7 @@
                         </div>
                     </div>
                     <!--charlotte location-->
-                    <div class="col l6 center">
+                    <div class="col l6 s12 center">
                         <ul class="collapsible popout" data-collapsible="accordion">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">add_location</i>Charlotte Location</div>
@@ -150,45 +152,45 @@
 
             </div>
 
-            <div class="col l5">
+            <div class="col l5 s12 section scrollspy" id="formArea">
                 <div class="container">
 
-                    <form class="col l12">
+                    <form class="col l12 s12">
                         <div class="row">
-                            <div class="input-field col s12">
-                                 <label>Which location would you like to contact?</label>
+                            <div class=" col s12 browser-default white-text">
+                                 <label>Which location would you like to contact?<i class="medium material-icons right">arrow_drop_down</i></label>
                                 <select id="whichLocation">
                                   <option value="" disabled selected></option>
                                   <option value="charlotte">Charlotte</option>
                                   <option value="concord">Concord</option>
                                 </select>
                               </div>
-                        </div>
+                        </div><br>
                         <div class="row">
-                            <div class="input-field col l12">
+                            <div class="input-field col l12 s12">
                                 <input id="name" type="text" class="white-text">
                                 <label for="email">Name</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col l12">
+                            <div class="input-field col l12 s12">
                                 <input id="phone" type="text" class="white-text">
                                 <label for="phone">Phone Number</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col l12">
+                            <div class="input-field col l12 s12">
                                 <input id="email" type="email" class="white-text">
                                 <label for="email">E-mail</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col l12">
+                            <div class="input-field col l12 s12">
                                 <input id="message" type="text" class="white-text">
                                 <label for="text">Message</label>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row center">
                             <div class="input-field">
                                 <a href="#" id="submitButton" class="btn waves-effect waves-light red darken-4 center-align"><span class="white-text">Submit</span></a>
                             </div>
@@ -253,7 +255,7 @@
                         </div>
                         <div class="row">
                             <div class="input-field">
-                                <a href="#" id="submitTime" class="btn waves-effect waves-light modal-action modal-close red darken-4 center"><span class="white-text">Submit</span></a>
+                                <a href="#scheduleApp" id="submitTime" class="btn waves-effect waves-light modal-action modal-close modal-trigger red darken-4 center"><span class="white-text">Submit</span></a>
                             </div>
                         </div>
                     </form>
@@ -293,7 +295,7 @@
                     </div>
                     <div class="row">
                         <div class="input-field">
-                            <a href="#" id="submitTime2" class="btn waves-effect waves-light modal-action modal-close red darken-4 center"><span class="white-text">Submit</span></a>
+                            <a href="#scheduleApp" id="submitTime2" class="btn waves-effect waves-light modal-action modal-close modal-trigger red darken-4 center"><span class="white-text">Submit</span></a>
                         </div>
                     </div>
                 </form>
@@ -309,6 +311,23 @@
         </div>
         <!--end of modal-->
 
+
+   <!-- thankYou modal -->
+
+                    <div id="scheduleApp" class="modal">
+                        <div class="modal-content">
+                            <h4>Avewsome!</h4>
+                            <p>Please complete the rest of the contact form to schedule your appointment.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#formArea" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+                        </div>
+                    </div>
+
+                    </form>
+
+                </div>
+                <!--end of modal-->
 
         </div>
         </div>
