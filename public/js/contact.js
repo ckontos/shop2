@@ -1,5 +1,15 @@
 window.onload = function() {
 
+    function randomNums() {
+        var randNum1 = Math.floor(Math.random() * 20) + 1;
+        var randNum2 = Math.floor(Math.random() * 20) + 1;
+        document.getElementById("digit1").innerHTML = randNum1;
+        document.getElementById("digit2").innerHTML = randNum2;
+    }
+
+    // get random nums
+    randomNums();
+
     // Adding an event listener for when the form is submitted
     $("#submitButton").on('click', handleFormSubmit);
 
@@ -7,6 +17,10 @@ window.onload = function() {
     function handleFormSubmit(event) {
         var appointment;
         var location;
+        var answer = $("#answer").val();
+        var digit1 = parseInt(document.getElementById("digit1").innerHTML);
+        var digit2 = parseInt(document.getElementById("digit2").innerHTML);
+        var sum = digit1 + digit2;
         var bodyInput = $("#message").val().trim();
         var nameInput = $("#name").val().trim();
         var phoneInput = $("#phone").val().trim();
@@ -35,6 +49,18 @@ window.onload = function() {
         else if (!selected) {
             $("#wrong").text("Please select which location you'd like to contact.");
             $('#pleaseComplete').modal('open');
+        }
+        else if (answer === null || answer === "") {
+            $("#wrong").text("Please solve the equation");
+            $('#pleaseComplete').modal('open');
+            randomNums();
+
+        }
+        else if (answer != sum) {
+            $("#wrong").text("Your math is wrong!");
+            $('#pleaseComplete').modal('open');
+            $("#answer").val("");
+            randomNums()
         }
 
         else {
