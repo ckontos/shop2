@@ -21,6 +21,12 @@
     width: 100%;
 }
 
+#briggsLogoMobile, #briggsLogoMobile {
+   margin-top: 3%;
+    height: 150px;
+    width: 300px;
+}
+
 #navBar {
     padding-bottom: 100px;
 }
@@ -135,10 +141,10 @@ body {
 }
 
 #briggsLogoNav {
-    height: 75px;
-    width: 125px;
-    margin-left: 20px;
-    margin-top: 15px;
+    height: 100px;
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 1%;
 }
 
 #mobileNavIcon {
@@ -219,18 +225,34 @@ body {
     #briggsLogo {
         width: 350px;
         height: 150px;
+    
     }
 }
 
 @media only screen and (max-width: 668px) {
+    
+     #facebookMain {
+        margin-top: 180%;
+    }
+    
     #briggsLogo {
         width: 200px;
         height: 100px;
     }
 
     #indexDivOneCard {
+    
         font-size: 18px;
     }
+    .info {
+    width: 100%;
+    height:0px;
+    color: white;
+}
+    /*#facebookContact, #facebookContact2 {*/
+    /*    height: 100px;*/
+    /*    width: 200px;*/
+    /*}*/
 
     #learnMoreBtn {
         padding-top: 25px;
