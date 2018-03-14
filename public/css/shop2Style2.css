@@ -285,11 +285,11 @@ body {
 
 
 #briggsLogo{
-    max-width: 400px;
-    width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: -35%;
+    max-width: 350px;
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: -45%;
 }
 
 .tabArea{
@@ -301,6 +301,15 @@ body {
     width: 250px;
 }
 
+#calendarPic, #calendarPic2 {
+    height: 300px;
+    width: 300px;
+}
+
+
+.indexContainer {
+    height: 400px;
+}
 }
 
 
