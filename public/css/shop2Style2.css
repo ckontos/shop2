@@ -52,6 +52,10 @@
 
 }
 
+.reviewCard {
+    background-color: #BB2F1F;
+}
+
 #navMain {
     /*margin-top: 30px;*/
     margin-right: 40px;
@@ -62,7 +66,7 @@
 }
 
 .tabs .tab a {
-    color: red;
+    color: white;
     font-size: 18px;
 }
 
@@ -219,7 +223,7 @@ body {
 
 #nav-mobile li a {
     margin-top: 15%;
-    margin-left: 20px;
+    margin-left: 0px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
 }
@@ -317,10 +321,11 @@ body {
 }
 
 .tabImg{
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 300px;
+    max-width: 300px;
     height: 100%;
     width: 100%;
+    margin-bottom: -5%
 }
 
 .activeNav{
@@ -328,6 +333,13 @@ body {
     
 }
 
+#briggsLogoServices{
+    max-width: 350px;
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: -45%;
+}
 
 #briggsLogo{
     max-width: 350px;
@@ -352,9 +364,7 @@ body {
 }
 
 
-.indexContainer {
-    height: 400px;
-}
+
 }
 
 

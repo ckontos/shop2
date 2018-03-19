@@ -10,10 +10,14 @@ window.onload = function() { // When you click the run-scrape button
         method: "GET",
         url: "/scrape"
       }).done(function(data) {
-      console.log("in main.js " + JSON.stringify(data));
-     
+    
       });
     
     });
 
 }
+
+
+$("#scheduleNowBtn").on("click", function() {
+  window.location="contact";
+})
