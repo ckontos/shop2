@@ -1,7 +1,7 @@
 /* NEW STYLE FOR SHOP2 */
 
 #nav-mobile li a {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
 }
@@ -21,8 +21,23 @@
     width: 100%;
 }
 
+.card-panel {
+    opacity: .9;
+    border-radius: 10px;
+}
+
+#briggsLogoMobile,
+#briggsLogoMobile {
+    margin-top: 3%;
+    height: 150px;
+    width: 300px;
+}
+
 #navBar {
     padding-bottom: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
 }
 
 #topLogo {
@@ -76,7 +91,6 @@ body {
     background-position: 0 60%;
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .img2,
@@ -135,15 +149,15 @@ body {
 }
 
 #briggsLogoNav {
-    height: 75px;
-    width: 125px;
-    margin-left: 20px;
-    margin-top: 15px;
+    height: 100px;
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 1%;
 }
 
 #mobileNavIcon {
-    margin-left: 30px;
-    margin-top: 15px;
+    margin-left: 47%;
+    margin-top: 5%;
 }
 
 #indexDivOneCard {
@@ -156,9 +170,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#freeEstimate {
-    margin-top: 50px;
-}
+/*#freeEstimate {
+    */
+
+/*    margin-top: 50px;*/
+
+/*}*/
 
 #freeEstimateCard {
     font-family: 'Montserrat', sans-serif;
@@ -198,8 +215,9 @@ body {
 }
 
 #learnMoreBtn:hover {
-    background: white;
+    background: white !important;
     border-color: black;
+    color: black !important;
 }
 
 .card-panel,
@@ -208,22 +226,42 @@ body {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#bottomCard {
+    margin-top: 100px;
+}
 
-
-/*mobile view*/
+/*tablet/mobile view*/
 
 @media only screen and (max-width: 1024px) {
     #indexDivOneCard {
         font-size: 24px;
     }
+
     #briggsLogo {
         width: 350px;
         height: 150px;
     }
+
+    .img1 {
+        background-position: 0 14%;
+        height: 320px;
+    }
 }
 
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 992px) {
+    .info2 {
+        height: 970px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+
+    #facebookMain {
+        margin-top: 180%;
+    }
+
     #briggsLogo {
+        margin-top: 5%;
         width: 200px;
         height: 100px;
     }
@@ -232,6 +270,19 @@ body {
         font-size: 18px;
     }
 
+    #popout2 {
+        margin-bottom: -40%
+    }
+
+    .info {
+        width: 100%;
+        height: 0px;
+        color: white;
+    }
+    /*#facebookContact, #facebookContact2 {*/
+    /*    height: 100px;*/
+    /*    width: 200px;*/
+    /*}*/
     #learnMoreBtn {
         padding-top: 25px;
         padding-bottom: 75px;
@@ -249,5 +300,61 @@ body {
         height: 110px;
         width: 110px;
     }
+
+    #iCarLogo {
+        height: 100px;
+        width: 200px;
+    }
+
+    #weAccept {
+        height: 50px;
+        width: 230px;
+    }
+
+    #bottomCard {
+        margin-top: 50%;
+    }
+
+    .firstInfo {
+        height: 730px;
+    }
+
+    .secondInfo {
+        height: 820px;
+    }
+
+    .thirdInfo {
+        height: 1230px;
+    }
+
+    .fourthInfo {
+        height: 500px;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        height: 600px;
+    }
+
+    #servicesDiv {
+        margin-top: 50px;
+    }
+
+    #bottomCard {
+        margin-top: 20%;
+    }
+
+    .img3 {
+        background-image: url("../images/shop5.jpg");
+    }
+
+    #navBar {
+        padding-bottom: 100px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 1px;
+    }
+
 
 }

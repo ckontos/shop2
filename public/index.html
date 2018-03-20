@@ -17,11 +17,10 @@
         <div id="pageTop"></div>
         <nav class="grey darken-4" id="navBar">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img id="briggsLogoNav" src="./images/briggslogo3.png"></a>
-                <a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down" id="mobileNavIcon"><i class="material-icons medium">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="#" class="brand-logo hide-on-med-and-down"><img id="briggsLogoNav" src="./images/briggslogo3.png"></a>
+                <a href="#" data-activates="slide-out" class="center button-collapse hide-on-med-and-up" id="mobileNavIcon"><i class="center material-icons medium">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-small-only">
                     <li><a href="/index" class="activeNav" id="home">Home</a></li>
-                    <li><a href="/about" id="about">About Us</a></li>
                     <li><a href="/services" id="services">Services</a></li>
                     <li><a href="/contact" id="contact">Contact Us</a></li>
                     <li><a href="/reviews" id="reviews">Reviews</a></li>
@@ -31,9 +30,8 @@
 
         <!--    sideNav hidden on large scrrens-->
 
-        <ul id="slide-out" class="side-nav hide-on-large grey darken-4">
+        <ul id="slide-out" class="side-nav hide-on-med-and-up grey darken-4">
             <li><a href="/index" class="white-text activeNav" id="home">Home</a></li>
-            <li><a href="/about" class="white-text" id="about">About Us</a></li>
             <li><a href="/services" class="white-text" id="services">Services</a></li>
             <li><a href="/contact" class="white-text" id="contact">Contact Us</a></li>
             <li><a href="/reviews" class="white-text" id="reviews">Reviews</a></li>
@@ -44,19 +42,91 @@
         <!--=========================== NEW CODE LAYOUT ====================================-->
         <div class="indexContainer">
 
-            <div class="img1"></div>
-            <div class="info">
-                <!------- FIRST DIV CONTENTS -------->
-                <div class="row" id="indexDivOneLogo">
-                    <div class="col s1"></div>
-                    <div class="col s10 center-align">
-                        <img id="briggsLogo" src="./images/briggsLogo.jpeg">
+            <!--=========================== FIRST BG IMAGE ====================================-->
+            <div class="img1 hide-on-small-only"></div>
+
+            <!--=========================== FIRST DIV CONTENTS ====================================-->
+            <div class="info firstInfo">
+                <div class="row center hide-on-med-and-up">
+                    <img id="briggsLogoMobile" src="./images/briggslogo3.png"><br>
+                    <img id="briggsLogoMobile" src="./images/briggs.png"><br>
+                    <!--put info for stores here-->
+                    <div class="row">
+                        <!--concord location-->
+                        <div class="col l12 s12 center">
+                            <ul class="collapsible popout" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">add_location</i>Concord Location</div>
+
+                                    <div class="collapsible-body white black-text center">
+                                        <p class="center">3900 Concord Pkwy S, Concord, NC 28027
+                                        </p>
+                                        <br>
+                                        <iframe class="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104113.24885142558!2d-80.73806128811725!3d35.367084793926395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541adaf30798b9%3A0x5c30a35004f58c2b!2sBriggs+Collision!5e0!3m2!1sen!2sus!4v1520564851348"
+                                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">call</i>Call</div>
+
+                                    <div class="collapsible-body white black-text left-align">
+                                        <p class="center">704-782-4569</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">timer</i>Hours</div>
+
+                                    <div class="collapsible-body white black-text left-align">
+                                        <p class="center">Monday - Friday: 8 am - 6 pm <br> Saturday: Closed <br> Sunday: Closed
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--charlotte location-->
+                        <div class="col l6 s12 center">
+                            <ul class="collapsible popout" id="popout2" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">add_location</i>Charlotte Location</div>
+
+                                    <div class="collapsible-body white black-text center">
+                                        <p class="center">8130 Wilkinson Blvd, Charlotte, NC 28214
+                                        </p>
+                                        <br>
+                                        <iframe class="mapPicMain2" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104275.07828845688!2d-81.04824809171747!3d35.24142082509844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8856a2b048603f11%3A0x33838c83a243dddb!2sBriggs+Collision%2C+8130+Wilkinson+Blvd%2C+Charlotte%2C+NC+28214!3m2!1d35.241441!2d-80.978208!5e0!3m2!1sen!2sus!4v1520565160586"
+                                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">call</i>Call</div>
+
+                                    <div class="collapsible-body white black-text left-align">
+                                        <p class="center">980-938-53550</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header black-text"><i class="material-icons">timer</i>Hours</div>
+
+                                    <div class="collapsible-body white black-text left-align">
+                                        <p class="center">Monday - Friday: 8 am - 6 pm <br>Saturday: Closed<br> Sunday: Closed
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col s1"></div>
                 </div>
-                <div class="row" id="indexDivOneText">
-                    <div class="col s1"></div>
-                    <div class="col s10">
+                <div class="row hide-on-small-only" id="indexDivOneLogo">
+                    <div class="col l1 m1"></div>
+                    <div class="col l10 m10 center-align">
+                        <img id="briggsLogo" src="./images/briggslogo3.png">
+                    </div>
+                    <div class="col l1 m1"></div>
+                </div>
+                <div class="row hide-on-small-only" id="indexDivOneText">
+                    <div class="col l1 m1"></div>
+                    <div class="col l10 m10">
                         <div class="card-panel grey lighten-1 center-align" id="indexDivOneCard">
                             <span class="black-text">
                                 <div>
@@ -66,17 +136,18 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col s1"></div>
+                    <div class="col l1 m1"></div>
                 </div>
-                <!------- END FIRST DIV CODE -------->
             </div>
-            <div class="img2"></div>
-            <div class="info">
-                <!------- 2nd DIV CONTENTS -------->
 
+            <!--=========================== 2ND BG IMAGE ====================================-->
+            <div class="img2"></div>
+
+            <!--=========================== 2ND DIV CONTENTS ====================================-->
+            <div class="info secondInfo">
                 <div class="row" id="freeEstimate">
-                    <div class="col s2"></div>
-                    <div class="col s8">
+                    <div class="col s1"></div>
+                    <div class="col s10">
                         <div class="card-panel red lighten-2 center-align" id="freeEstimateCard">
                             <span class="white-text">
                                 <h3>Schedule a Free Estimate!</h3>
@@ -86,12 +157,14 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col s2"></div>
+                    <div class="col s1"></div>
                 </div>
 
-                <div class="row cardArea">
-                    <div class="col s2"></div>
-                    <div class="col s4">
+
+                <div class="row cardArea hide-on-small-only">
+                    <div class="col l1 m1"></div>
+                    <div class="col l5 m10">
+
                         <div class="card grey lighten-1" id="searchCard">
                             <div class="card-content black-text">
                                 <span class="card-title black-text center-align">Shop Information - Concord</span>
@@ -130,7 +203,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s4">
+
+                    <div class="col l5 m10 offset-m1">
+
                         <div class="card grey lighten-1" id="searchCard">
                             <div class="card-content black-text">
                                 <span class="card-title black-text center-align">Shop Information - Charlotte</span>
@@ -169,24 +244,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s2"></div>
+                    <div class="col l1 m1"></div>
                 </div>
 
-                <!------- END 2nd DIV CODE -------->
+                <div class="row hide-on-med-and-up cardArea" id="indexDivOneText">
+                    <div class="col s1"></div>
+                    <div class="col s10">
+                        <div class="card-panel grey lighten-1 center-align" id="indexDivOneCard">
+                            <span class="black-text">
+                                <div>
+                                    Briggs Collision provides top-notch auto body and auto paint services to Concord, NC and the surrounding areas. Family owned and operated, we have more than 20 years combined experience. We repair all makes and models, foreign and domestic, and are a
+                                        direct repair shop for most big name insurance companies.
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col l1"></div>
+                </div>
             </div>
 
+            <!--=========================== 3RD BG IMAGE ====================================-->
             <div class="img3"></div>
 
-            <div class="info">
-                <!------- 3rd DIV CONTENTS -------->
-                <div class="row" id="servicesDiv">
+            <!--=========================== 3RD DIV CONTENTS ====================================-->
+            <div class="info thirdInfo">
+                <div class="row center" id="servicesDiv">
                     <div class="row">
-                        <div class="col s12">
+                        <div class="col l12 m12 s12">
                             <h2 class="center-align">Services We Offer</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col l4 m4 s12">
+                        <div class="col l4 m4 s10 offset-s1">
                             <div class="card-panel red lighten-2 center-align">
                                 <span class="white-text">
                                         <i class="large material-icons">directions_car</i><br>
@@ -194,7 +283,7 @@
                                     </span>
                             </div>
                         </div>
-                        <div class="col l4 m4 s12">
+                        <div class="col l4 m4 s10 offset-s1">
                             <div class="card-panel red lighten-2 center-align">
                                 <span class="white-text">
                                         <i class="large material-icons">format_color_fill</i><br>
@@ -202,53 +291,52 @@
                                     </span>
                             </div>
                         </div>
-                        <div class="col l4 m4 s12">
+                        <div class="col l4 m4 s10 offset-s1">
                             <div class="card-panel red lighten-2 center-align">
                                 <span class="white-text">
                                         <i class="large material-icons">build</i><br>
-                                        <h3>Auto Repairs</h3>
+                                        <h3>Auto Repair</h3>
                                     </span>
                             </div>
                         </div>
-
                     </div>
-
                     <div class="row">
                         <div class="col s12 center-align">
                             <a href="/services" class="waves-effect waves-light btn-large grey darken-4" id="learnMoreBtn">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <!------- END 3rd DIV CODE -------->
             </div>
+
+            <!--=========================== 4TH BG IMAGE ====================================-->
             <div class="img4"></div>
-            <div class="info">
-                <!------- 4th DIV CONTENTS -------->
 
-                <!------- END 4th DIV CODE -------->
+            <!--=========================== 4TH DIV CONTENTS ====================================-->
+            <div class="info fourthInfo">
+                <div class="row">
+                    <div class="col s1"></div>
+                    <div class="col s10 center">
+                        <div class="card-panel grey lighten-1 center-align" id="bottomCard">
+                            <h4>We are Licensed, Bonded and Insured</h4>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7k8e53FA1gYlKN-0Uiu6oEKwUjjeCf868yRm1QyYvTNnC_bn" id="iCarLogo"><br>
+                            <h5>Member of BBB<br> Concord Chamber of Commerce
+                            </h5>
+                            <div class="row">
+                                <img src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1348578-mastercard-visa-discover.gif" id="weAccept">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s1"></div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <a href='#pageTop' class="btn-floating btn-large waves-effect waves-light red" id="toTopButton"><i class="material-icons">arrow_upward</i></a>
+                    </div>
+                </div>
             </div>
-
         </div>
         <!--============================ END CODE LAYOUT ========================================--->
-
-
     </main>
-
-    <!--need to put facebook and links down here-->
-    <footer class="page-footer black hide-on-med-and-up">
-        <div class="row">
-            <div class="col l4 s1"></div>
-            <div class="col l4 s10 center">
-                <a href="https://www.facebook.com/McneillsBodyShop/">
-                        <img class="hide-on-med-and-up center" id="facebookMain" src="./images/facebook4.jpg">
-                        </a>
-            </div>
-            <div class="col l4 s1"></div>
-        </div>
-    </footer>
-    <div class="row center hide-on-med-and-up">
-        <a href='#pageTop' class="btn-floating btn-large waves-effect waves-light red" id="toTopButton"><i class="material-icons">arrow_upward</i></a>
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.0.min.js " integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin=" anonymous "></script>

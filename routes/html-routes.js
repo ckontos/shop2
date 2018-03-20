@@ -24,16 +24,12 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
  
-  // main route loads forSale
+  // main route loads reviews
   app.get("/reviews", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/reviews.html"));
   });
  
-  // main route loads about.html
-  app.get("/about", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/about.html"));
-  });
-  
+ 
    // main route loads services.html
   app.get("/services", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/services.html"));
