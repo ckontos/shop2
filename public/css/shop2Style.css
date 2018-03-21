@@ -254,7 +254,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
 
     #facebookMain {
         margin-top: 180%;
@@ -346,15 +346,15 @@ body {
     }
 
     .img2 {
-        background-image: url("../images/shop3small.jpg");
+        background-image: url("../images/shop3.jpg");
     }
 
     .img3 {
-        background-image: url("../images/shop5small.jpg");
+        background-image: url("../images/shop5.jpg");
     }
 
     .img4 {
-        background-image: url("../images/carsmall.jpg");
+        background-image: url("../images/car.jpg");
     }
 
     #navBar {
@@ -368,7 +368,7 @@ body {
     .img3,
     .img4 {
         height: 550px;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
