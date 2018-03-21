@@ -345,17 +345,17 @@ body {
         margin-top: 20%;
     }
 
-    .img2 {
-        background-image: url("../images/shop3.jpg");
-    }
+    /*.img2 {*/
+    /*    background-image: url("../images/shop3.jpg");*/
+    /*}*/
 
-    .img3 {
-        background-image: url("../images/shop5.jpg");
-    }
+    /*.img3 {*/
+    /*    background-image: url("../images/shop5.jpg");*/
+    /*}*/
 
-    .img4 {
-        background-image: url("../images/car.jpg");
-    }
+    /*.img4 {*/
+    /*    background-image: url("../images/car.jpg");*/
+    /*}*/
 
     #navBar {
         padding-bottom: 100px;
@@ -364,15 +364,15 @@ body {
         border-bottom-width: 1px;
     }
 
-    .img2,
-    .img3,
-    .img4 {
-        height: 550px;
-        background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    /*.img2,*/
+    /*.img3,*/
+    /*.img4 {*/
+    /*    height: 550px;*/
+    /*    background-attachment: scroll;*/
+    /*    background-position: center;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: cover;*/
+    /*}*/
 
 
 }

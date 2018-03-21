@@ -141,7 +141,10 @@
             </div>
 
             <!--=========================== 2ND BG IMAGE ====================================-->
-            <div class="img2"></div>
+            <div class="img2 hide-on-small-only"></div>
+            <div class="parallax-container hide-on-med-and-up">
+                <div class="parallax"><img src="images/shop3.jpg"></div>
+            </div>
 
             <!--=========================== 2ND DIV CONTENTS ====================================-->
             <div class="info secondInfo">
@@ -264,7 +267,10 @@
             </div>
 
             <!--=========================== 3RD BG IMAGE ====================================-->
-            <div class="img3"></div>
+            <div class="img3 hide-on-small-only"></div>
+            <div class="parallax-container hide-on-med-and-up">
+                <div class="parallax"><img src="images/shop5.jpg"></div>
+            </div>
 
             <!--=========================== 3RD DIV CONTENTS ====================================-->
             <div class="info thirdInfo">
@@ -309,7 +315,10 @@
             </div>
 
             <!--=========================== 4TH BG IMAGE ====================================-->
-            <div class="img4"></div>
+            <div class="img4 hide-on-small-only"></div>
+            <div class="parallax-container hide-on-med-and-up">
+                <div class="parallax"><img src="images/car.jpg"></div>
+            </div>
 
             <!--=========================== 4TH DIV CONTENTS ====================================-->
             <div class="info fourthInfo">
@@ -347,6 +356,7 @@
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
+            $('.parallax').parallax();
         });
         $("#toTopButton").on('click', function(event) {
             event.preventDefault();
