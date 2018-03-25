@@ -26,7 +26,6 @@
     border-radius: 10px;
 }
 
-#briggsLogoMobile,
 #briggsLogoMobile {
     margin-top: 3%;
     height: 150px;
@@ -237,11 +236,6 @@ body {
         font-size: 24px;
     }
 
-    #briggsLogo {
-        width: 350px;
-        height: 150px;
-    }
-
     .img1 {
         background-position: 0 14%;
         height: 320px;
@@ -249,8 +243,13 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-    .info2 {
-        height: 970px;
+
+    .firstInfo {
+        height: 800px;
+    }
+
+    .secondInfo {
+        height: 700px;
     }
 }
 
@@ -316,25 +315,23 @@ body {
     }
 
     .firstInfo {
-        height: 730px;
+        height: 800px;
     }
 
     .secondInfo {
-        height: 820px;
+        height: 700px;
+    }
+
+    #freeEstimate {
+        margin-top: 125px;
     }
 
     .thirdInfo {
-        height: 1230px;
+        height: 1200px;
     }
 
     .fourthInfo {
         height: 500px;
-    }
-
-    .img2,
-    .img3,
-    .img4 {
-        height: 600px;
     }
 
     #servicesDiv {
@@ -348,15 +345,12 @@ body {
     /*.img2 {*/
     /*    background-image: url("../images/shop3.jpg");*/
     /*}*/
-
     /*.img3 {*/
     /*    background-image: url("../images/shop5.jpg");*/
     /*}*/
-
     /*.img4 {*/
     /*    background-image: url("../images/car.jpg");*/
     /*}*/
-
     #navBar {
         padding-bottom: 100px;
         border-bottom-style: solid;
@@ -373,6 +367,4 @@ body {
     /*    background-repeat: no-repeat;*/
     /*    background-size: cover;*/
     /*}*/
-
-
 }
