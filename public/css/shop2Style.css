@@ -396,11 +396,17 @@ body {
     .thirdInfo {
         height: 1280px;
     }
+
+    .mapPicMain2 {
+        height: 250px;
+        width: 250px;
+    }
 }
 
 /**********************older iphone models(5 and under)**************************/
 
 @media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
+
     .secondInfo {
         height: 1090px;
     }
