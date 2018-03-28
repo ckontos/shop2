@@ -1,5 +1,7 @@
 /* NEW STYLE FOR SHOP2 for pages contact and services */
+
 /* large devices*/
+
 #nav-mobile li a {
     /*margin-top: 15%;*/
     margin-left: 20px;
@@ -16,15 +18,17 @@
     border-radius: 20px;
 }
 
-.collapsible{
+.collapsible {
     margin-top: 15%;
 }
-#para1{
+
+#para1 {
     max-width: 2500px;
     max-height: 800px;
     height: 100%;
     width: 100%;
 }
+
 .parralaxText {
     position: absolute;
     top: 50%;
@@ -32,7 +36,8 @@
     transform: translate(25%, -50%);
 }
 
-.parralaxText, h2 {
+.parralaxText,
+h2 {
     font-weight: bolder;
     text-shadow: 2px 2px grey;
 }
@@ -106,23 +111,22 @@ body {
 
 .tabList {
     /*margin-top: 5%;*/
-   /*margin-left: 15%;*/
-   
+    /*margin-left: 15%;*/
 }
 
-.tabImg{
+.tabImg {
     max-height: 400px;
     max-width: 400px;
     height: 100%;
     width: 100%;
 }
 
-.activeNav{
-     color: red;   
-    
+.activeNav {
+    color: red;
 }
 
-#facebookContact, #facebookContact2{
+#facebookContact,
+#facebookContact2 {
     max-height: 120px;
     max-width: 120px;
     height: 100%;
@@ -131,21 +135,22 @@ body {
 
 
 
-#briggsLogo{
+#briggsLogo {
     margin-left: 10%;
     margin-bottom: -10%;
-   
+
 }
 
-.tabArea{
+.tabArea {
     margin-left: 5%;
 }
 
-#cardArea{
+#cardArea {
     margin-top: -10;
 }
 
-#calendarPic, #calendarPic2 {
+#calendarPic,
+#calendarPic2 {
     height: 320px;
     width: 500px;
 }
@@ -155,213 +160,208 @@ body {
     height: 60%;
     width: 90%;
 }
+
 /* end large devices */
 
-
-
-
-
-
 /*begin tablets*/
+
 @media screen and (max-width: 960px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    
-    .tabImg{
-  margin-left: 0%;
-  margin-top: 5%;
-}
 
-.mapPicMain2{
-    height: 350px;
-    width: 350px;
-}
+    .tabImg {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .mapPicMain2 {
+        height: 350px;
+        width: 350px;
+    }
 
 
-#briggsLogo {
-    margin-left: 13%;
-    margin-bottom: -20%;
-}
+    #briggsLogo {
+        margin-left: 13%;
+        margin-bottom: -20%;
+    }
 
-#briggsLogoContact {
-    margin-left: 0%;
-    margin-bottom: -20%;
-}
-    
-.tabArea{
-    margin-left: 0%;
-}
-    
+    #briggsLogoContact {
+        margin-left: 0%;
+        margin-bottom: -20%;
+    }
+
+    .tabArea {
+        margin-left: 0%;
+    }
+
 }
 
 /*end tablets*/
 
-
 /* special for ipad regular*/
-@media screen and (max-width: 1024px) and (min-width: 961px) and (-webkit-min-device-pixel-ratio: 2) {
-   #briggsLogo {
-    margin-left: 20%;
-    height: 150px;
-    width: 400px;
-} 
 
-#nav-mobile {
-    width: 350px;
-}
+@media screen and (max-width: 1024px) and (min-width: 961px) and (-webkit-min-device-pixel-ratio: 2) {
+    #briggsLogo {
+        margin-left: 20%;
+        height: 150px;
+        width: 400px;
+    }
+
+    #nav-mobile {
+        width: 350px;
+    }
 
 
 }
 
 /* end ipad regular*/
 
-
-
-
 /*begin small devices and phones*/
+
 @media screen and (min-device-width: 250px) and (max-device-width: 666px) and (-webkit-min-device-pixel-ratio: 2) {
-    
-    
+
+
     /* NEW STYLE FOR SHOP2 */
+    #nav-mobile li a {
+        margin-top: 15%;
+        margin-left: 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+    }
 
-#nav-mobile li a {
-    margin-top: 15%;
-    margin-left: 0px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-}
+    #nav-mobile li a:hover {
+        color: #e57373;
+    }
 
-#nav-mobile li a:hover {
-    color: #e57373;
-}
+    .collapsible {
+        margin-top: 15%;
+    }
+    #para1 {
+        max-width: 2500px;
+        max-height: 800px;
+        height: 100%;
+        width: 100%;
+    }
+    .parralaxText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(25%, -50%);
+    }
 
-.collapsible{
-    margin-top: 15%;
-}
-#para1{
-    max-width: 2500px;
-    max-height: 800px;
-    height: 100%;
-    width: 100%;
-}
-.parralaxText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -50%);
-}
+    .parralaxText,
+    h2 {
+        font-weight: bolder;
+        text-shadow: 2px 2px grey;
+    }
 
-.parralaxText, h2 {
-    font-weight: bolder;
-    text-shadow: 2px 2px grey;
-}
+    .cardArea {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-.cardArea {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #navBar {
+        /*padding-bottom: 100px;*/
+    }
 
-#navBar {
-    /*padding-bottom: 100px;*/
-}
+    #topLogo {
+        margin-top: 15px;
+        margin-left: 40px;
 
-#topLogo {
-    margin-top: 15px;
-    margin-left: 40px;
-
-}
-
-
-
-#navMain {
-    /*margin-top: 30px;*/
-    margin-right: 40px;
-}
-
-#tabsDiv {
-    background: #212121;
-}
-
-.tabs .tab a {
-    color: white;
-    font-size: 18px;
-}
+    }
 
 
-#collapseDiv {
-    background: #212121;
-}
 
-#shopPhoto {
-    height: 260px;
-    width: 400px;
-    margin-top: 10px;
-}
+    #navMain {
+        /*margin-top: 30px;*/
+        margin-right: 40px;
+    }
 
-#facebookMain {
-    margin-top: 20%;
-    height: 100px;
-    width: 250px;
-}
+    #tabsDiv {
+        background: #212121;
+    }
 
-#collapseDivTitle {
-    margin-top: 5%;
-    text-align: center;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 50px;
-}
+    .tabs .tab a {
+        color: white;
+        font-size: 18px;
+    }
 
-body {
-    /*background: #212121;*/
-    background-color: black;
-}
 
-.tabList {
-   /* margin-top: 5%;*/
-   /*margin-left: 5%;*/
-   
-}
+    #collapseDiv {
+        background: #212121;
+    }
 
-.tabImg{
-    max-height: 300px;
-    max-width: 300px;
-    height: 100%;
-    width: 100%;
-    margin-bottom: -5%
-}
+    #shopPhoto {
+        height: 260px;
+        width: 400px;
+        margin-top: 10px;
+    }
 
-.activeNav{
-     color: red;   
-    
-}
+    #facebookMain {
+        margin-top: 20%;
+        height: 100px;
+        width: 250px;
+    }
 
-#briggsLogoServices{
-    max-width: 350px;
-   
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: -45%;
-}
+    #collapseDivTitle {
+        margin-top: 5%;
+        text-align: center;
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-bottom: 50px;
+    }
 
-#briggsLogo{
-    max-width: 350px;
-   
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: -35%;
-}
+    body {
+        /*background: #212121;*/
+        background-color: black;
+    }
 
-.tabArea{
-    margin-left: 0%;
-}
+    .tabList {
+        /* margin-top: 5%;*/
+        /*margin-left: 5%;*/
+    }
 
-.mapPicMain2{
-    height: 250px;
-    width: 250px;
-}
+    .tabImg {
+        max-height: 300px;
+        max-width: 300px;
+        height: 100%;
+        width: 100%;
+        margin-bottom: -5%
+    }
 
-#calendarPic, #calendarPic2 {
-    height: 300px;
-    width: 300px;
-}
+    .activeNav {
+        color: red;
+
+    }
+
+    #briggsLogoServices {
+        max-width: 350px;
+
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: -45%;
+    }
+
+    #briggsLogo {
+        max-width: 350px;
+
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: -35%;
+    }
+
+    .tabArea {
+        margin-left: 0%;
+    }
+
+    .mapPicMain2 {
+        height: 250px;
+        width: 250px;
+    }
+
+    #calendarPic,
+    #calendarPic2 {
+        height: 300px;
+        width: 300px;
+    }
 
 
 

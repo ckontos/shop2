@@ -7,7 +7,11 @@
 }
 
 #nav-mobile li a:hover {
-    color: #e57373;
+    color: #64b5f6;
+}
+
+.activeNav {
+    color: #64b5f6;
 }
 
 .collapsible {
@@ -21,7 +25,8 @@
     width: 100%;
 }
 
-.card-panel {
+.card-panel,
+.searchCard {
     opacity: .9;
     border-radius: 10px;
 }
@@ -163,13 +168,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*#freeEstimate {
-    */
-
-/*    margin-top: 50px;*/
-
-/*}*/
-
 #freeEstimateCard {
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
@@ -186,8 +184,6 @@ body {
     border-color: black;
     color: black;
 }
-
-#searchCard {}
 
 #servicesDiv {
     margin-top: 100px;
@@ -214,7 +210,7 @@ body {
 }
 
 .card-panel,
-#searchCard,
+.searchCard,
 #freeEstimateCard {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -223,7 +219,7 @@ body {
     margin-top: 100px;
 }
 
-/*tablet/mobile view*/
+/**********************tablet/mobile view**************************/
 
 @media only screen and (max-width: 1024px) {
     #indexDivOneCard {
@@ -235,6 +231,8 @@ body {
         height: 320px;
     }
 }
+
+/**********************medium screens defined by materialize**************************/
 
 @media only screen and (max-width: 992px) {
 
@@ -267,6 +265,8 @@ body {
     }
 }
 
+/**********************IPAD query**************************/
+
 @media only screen and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
 
     #facebookMain {
@@ -291,10 +291,7 @@ body {
         width: 100%;
         color: white;
     }
-    /*#facebookContact, #facebookContact2 {*/
-    /*    height: 100px;*/
-    /*    width: 200px;*/
-    /*}*/
+
     #learnMoreBtn {
         padding-top: 25px;
         padding-bottom: 75px;
@@ -355,15 +352,6 @@ body {
         margin-top: 20%;
     }
 
-    /*.img2 {*/
-    /*    background-image: url("../images/shop3.jpg");*/
-    /*}*/
-    /*.img3 {*/
-    /*    background-image: url("../images/shop5.jpg");*/
-    /*}*/
-    /*.img4 {*/
-    /*    background-image: url("../images/car.jpg");*/
-    /*}*/
     #navBar {
         padding-bottom: 100px;
         border-bottom-style: solid;
@@ -382,16 +370,47 @@ body {
     /*}*/
 }
 
+/**********************Iphone 6/7/8/X small screen materialize**************************/
+
 @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .secondInfo {
-        height: 900px;
+        height: 930px;
     }
     #freeEstimate {
         margin-top: 50px;
     }
 
     .thirdInfo {
-        height: 1200px;
+        height: 1240px;
+    }
+}
+
+/**********************Galaxy phones if anyone has those anymore**************************/
+
+@media only screen and (max-width: 361px) and (-webkit-min-device-pixel-ratio: 2) {
+    .secondInfo {
+        height: 960px;
+    }
+
+    .thirdInfo {
+        height: 1280px;
+    }
+}
+
+/**********************older iphone models(5 and under)**************************/
+
+@media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
+    .secondInfo {
+        height: 1090px;
+    }
+
+    .thirdInfo {
+        height: 1280px;
+    }
+
+    #weAccept {
+        height: 50px;
+        width: 200px;
     }
 }
