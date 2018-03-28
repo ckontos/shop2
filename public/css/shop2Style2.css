@@ -163,7 +163,7 @@ body {
 
 
 /*begin tablets*/
-@media screen and (max-width: 960px) and (min-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 960px) and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2) {
     
     .tabImg{
   margin-left: 0%;
@@ -177,8 +177,8 @@ body {
 
 
 #briggsLogo {
-    margin-left: 13%;
-    margin-bottom: -20%;
+    margin-left: 0%;
+    margin-bottom: -5;
 }
 
 #briggsLogoContact {
@@ -216,7 +216,7 @@ body {
 
 
 /*begin small devices and phones*/
-@media screen and (min-device-width: 250px) and (max-device-width: 666px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 250px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     
     
     /* NEW STYLE FOR SHOP2 */
@@ -338,7 +338,7 @@ body {
    
     margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: -45%;
+    margin-bottom: -25%;
 }
 
 #briggsLogo{
@@ -346,7 +346,7 @@ body {
    
     margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: -35%;
+    margin-bottom: -20%;
 }
 
 .tabArea{
