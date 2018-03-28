@@ -178,10 +178,20 @@ body {
     }
 
 
+<<<<<<< HEAD
     #briggsLogo {
         margin-left: 13%;
         margin-bottom: -20%;
     }
+=======
+/*begin tablets*/
+@media screen and (max-width: 960px) and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .tabImg{
+  margin-left: 0%;
+  margin-top: 5%;
+}
+>>>>>>> be1769153d11821bef83d7763cdb255ce320b3d8
 
     #briggsLogoContact {
         margin-left: 0%;
@@ -192,6 +202,23 @@ body {
         margin-left: 0%;
     }
 
+<<<<<<< HEAD
+=======
+#briggsLogo {
+    margin-left: 0%;
+    margin-bottom: -5;
+}
+
+#briggsLogoContact {
+    margin-left: 0%;
+    margin-bottom: -20%;
+}
+    
+.tabArea{
+    margin-left: 0%;
+}
+    
+>>>>>>> be1769153d11821bef83d7763cdb255ce320b3d8
 }
 
 /*end tablets*/
@@ -215,6 +242,60 @@ body {
 /* end ipad regular*/
 
 /*begin small devices and phones*/
+<<<<<<< HEAD
+=======
+@media screen and (min-device-width: 250px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    
+    /* NEW STYLE FOR SHOP2 */
+
+#nav-mobile li a {
+    margin-top: 15%;
+    margin-left: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+#nav-mobile li a:hover {
+    color: #e57373;
+}
+
+.collapsible{
+    margin-top: 15%;
+}
+#para1{
+    max-width: 2500px;
+    max-height: 800px;
+    height: 100%;
+    width: 100%;
+}
+.parralaxText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -50%);
+}
+
+.parralaxText, h2 {
+    font-weight: bolder;
+    text-shadow: 2px 2px grey;
+}
+
+.cardArea {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#navBar {
+    /*padding-bottom: 100px;*/
+}
+
+#topLogo {
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+>>>>>>> be1769153d11821bef83d7763cdb255ce320b3d8
 
 @media screen and (min-device-width: 250px) and (max-device-width: 666px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -340,6 +421,7 @@ body {
         margin-bottom: -45%;
     }
 
+<<<<<<< HEAD
     #briggsLogo {
         max-width: 350px;
 
@@ -347,6 +429,23 @@ body {
         margin-right: 0%;
         margin-bottom: -35%;
     }
+=======
+#briggsLogoServices{
+    max-width: 350px;
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: -25%;
+}
+
+#briggsLogo{
+    max-width: 350px;
+   
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: -20%;
+}
+>>>>>>> be1769153d11821bef83d7763cdb255ce320b3d8
 
     .tabArea {
         margin-left: 0%;
