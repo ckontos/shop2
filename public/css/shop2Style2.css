@@ -106,7 +106,7 @@ h2 {
 
 body {
     /*background: #212121;*/
-    background-color: black;
+    background-color: #212121;
 }
 
 .tabList {
@@ -122,7 +122,7 @@ body {
 }
 
 .activeNav {
-    color: red;
+    color: #e57373;
 }
 
 #facebookContact,
@@ -161,16 +161,57 @@ body {
     width: 90%;
 }
 
+.caret {
+    color: white !important;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #e57373 !important;
+}
+
+.dropdown-content li.disabled>span {
+    color: grey !important;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: white !important;
+}
+
+.input-field input[type=email]:focus+label {
+    color: white !important;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+#checkTimes:hover,
+#submitButton:hover {
+    background-color: #ef5350 !important;
+    color: black !important;
+}
+
 /* end large devices */
 
-
 /*begin tablets*/
+
 @media screen and (max-width: 960px) and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2) {
-    
-    .tabImg{
-  margin-left: 0%;
-  margin-top: 5%;
-}
+
+    .tabImg {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
 
     #briggsLogoContact {
         margin-left: 0%;
@@ -182,21 +223,22 @@ body {
     }
 
 
-#briggsLogo {
-    margin-left: 0%;
-    margin-bottom: -5;
+    #briggsLogo {
+        margin-left: 0%;
+        margin-bottom: -5;
+    }
+
+    #briggsLogoContact {
+        margin-left: 0%;
+        margin-bottom: -20%;
+    }
+
+    .tabArea {
+        margin-left: 0%;
+    }
+
 }
 
-#briggsLogoContact {
-    margin-left: 0%;
-    margin-bottom: -20%;
-}
-    
-.tabArea{
-    margin-left: 0%;
-}
-    
-}
 /*end tablets*/
 
 /* special for ipad regular*/
@@ -220,56 +262,56 @@ body {
 /*begin small devices and phones*/
 
 @media screen and (min-device-width: 250px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
-    
-    
+
+
     /* NEW STYLE FOR SHOP2 */
+    #nav-mobile li a {
+        margin-top: 15%;
+        margin-left: 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+    }
 
-#nav-mobile li a {
-    margin-top: 15%;
-    margin-left: 0px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-}
+    #nav-mobile li a:hover {
+        color: #e57373;
+    }
 
-#nav-mobile li a:hover {
-    color: #e57373;
-}
+    .collapsible {
+        margin-top: 15%;
+    }
+    #para1 {
+        max-width: 2500px;
+        max-height: 800px;
+        height: 100%;
+        width: 100%;
+    }
+    .parralaxText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(25%, -50%);
+    }
 
-.collapsible{
-    margin-top: 15%;
-}
-#para1{
-    max-width: 2500px;
-    max-height: 800px;
-    height: 100%;
-    width: 100%;
-}
-.parralaxText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -50%);
-}
+    .parralaxText,
+    h2 {
+        font-weight: bolder;
+        text-shadow: 2px 2px grey;
+    }
 
-.parralaxText, h2 {
-    font-weight: bolder;
-    text-shadow: 2px 2px grey;
-}
+    .cardArea {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-.cardArea {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    #navBar {
+        /*padding-bottom: 100px;*/
+    }
 
-#navBar {
-    /*padding-bottom: 100px;*/
-}
+    #topLogo {
+        margin-top: 15px;
+        margin-left: 40px;
 
-#topLogo {
-    margin-top: 15px;
-    margin-left: 40px;
-
-}
+    }
 }
 
 @media screen and (min-device-width: 250px) and (max-device-width: 666px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -405,21 +447,21 @@ body {
         margin-bottom: -35%;
     }
 
-#briggsLogoServices{
-    max-width: 350px;
-   
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: -25%;
-}
+    #briggsLogoServices {
+        max-width: 350px;
 
-#briggsLogo{
-    max-width: 350px;
-   
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: -20%;
-}
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: -25%;
+    }
+
+    #briggsLogo {
+        max-width: 350px;
+
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: -20%;
+    }
 
     .tabArea {
         margin-left: 0%;
