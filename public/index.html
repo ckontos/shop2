@@ -376,6 +376,32 @@
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 2500);
         });
+
+        var screenWidth = window.innerWidth;
+        if (screenWidth <= 600) {
+            $(window).scroll(function() {
+
+                var fromTopPxFirstBgChange = 1501;
+                var fromTopPxSecondBgChange = 2981;
+                var scrolledFromtop = $(window).scrollTop();
+
+                if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').addClass('secondBg');
+                }
+                else if (scrolledFromtop < fromTopPxFirstBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('thirdBg');
+                }
+                else if (scrolledFromtop >= fromTopPxSecondBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').addClass('thirdBg');
+                }
+                else {
+                    $('body').removeClass('secondBg, thirdBg');
+                }
+            });
+        }
     </script>
 
 </body>
