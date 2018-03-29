@@ -1,5 +1,10 @@
 /* NEW STYLE FOR SHOP2 */
 
+main {
+    min-height: 100%;
+    height: 100%;
+}
+
 #nav-mobile li a {
     /*margin-left: 20px;*/
     font-family: 'Roboto Condensed', sans-serif;
@@ -364,7 +369,12 @@ body {
 /**********************Iphone 6/7/8/X small screen materialize**************************/
 
 @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
-
+    .firstInfo,
+    .secondInfo,
+    .thirdInfo,
+    .fourthInfo {
+        background: #212121;
+    }
     .secondInfo {
         height: 930px;
     }
@@ -376,9 +386,15 @@ body {
         height: 1240px;
     }
 
-    .img2 {
+    .fourthInfo {
+        height: 660px;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
         height: 550px;
-        background-attachment: scroll;
+        background-image: none;
     }
 
     body:before {
@@ -388,7 +404,7 @@ body {
         left: 0;
         top: 0;
         width: 100%;
-        height: 550px;
+        height: 100%;
         z-index: -10;
         background: url("../images/shop3.jpg") no-repeat center center;
         -webkit-background-size: cover;
