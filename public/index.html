@@ -31,7 +31,7 @@
         <!--    sideNav hidden on large scrrens-->
 
         <ul id="slide-out" class="side-nav hide-on-large-only grey darken-4">
-            <li><a href="/index" class="red lighten-2-text" id="home">Home</a></li>
+            <li><a href="/index" class="red-text text-lighten-2" id="home">Home</a></li>
             <li><a href="/services" class="white-text" id="services">Services</a></li>
             <li><a href="/contact" class="white-text" id="contact">Contact Us</a></li>
             <li><a href="/reviews" class="white-text" id="reviews">Reviews</a></li>
@@ -149,11 +149,8 @@
             </div>
 
             <!--=========================== 2ND BG IMAGE ====================================-->
+
             <div class="img2"></div>
-            <!--<div class="img2 hide-on-med-and-down"></div>-->
-            <!--<div class="parallax-container hide-on-large-only">-->
-            <!--    <div class="parallax"><img src="images/shop3.jpg"></div>-->
-            <!--</div>-->
 
             <!--=========================== 2ND DIV CONTENTS ====================================-->
             <div class="info secondInfo">
@@ -276,11 +273,8 @@
             </div>
 
             <!--=========================== 3RD BG IMAGE ====================================-->
+
             <div class="img3"></div>
-            <!--<div class="img3 hide-on-med-and-down"></div>-->
-            <!--<div class="parallax-container hide-on-large-only">-->
-            <!--    <div class="parallax"><img src="images/shop5.jpg"></div>-->
-            <!--</div>-->
 
             <!--=========================== 3RD DIV CONTENTS ====================================-->
             <div class="info thirdInfo">
@@ -325,11 +319,8 @@
             </div>
 
             <!--=========================== 4TH BG IMAGE ====================================-->
+
             <div class="img4"></div>
-            <!-- <div class="img4 hide-on-med-and-down"></div>-->
-            <!--<div class="parallax-container hide-on-large-only">-->
-            <!--    <div class="parallax"><img src="images/car.jpg"></div>-->
-            <!--</div>-->
 
             <!--=========================== 4TH DIV CONTENTS ====================================-->
             <div class="info fourthInfo">
@@ -337,10 +328,18 @@
                     <div class="col s1"></div>
                     <div class="col s10 center">
                         <div class="card-panel grey lighten-1 center-align" id="bottomCard">
-                            <h4>We are Licensed, Bonded and Insured</h4>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7k8e53FA1gYlKN-0Uiu6oEKwUjjeCf868yRm1QyYvTNnC_bn" id="iCarLogo"><br>
-                            <h5>Member of BBB<br> Concord Chamber of Commerce
-                            </h5>
+                            <h4>We are Licensed, Bonded, and Insured.</h4>
+                            <div class="row businessLogos">
+                                <div class="col l4 m4 s12">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7k8e53FA1gYlKN-0Uiu6oEKwUjjeCf868yRm1QyYvTNnC_bn" id="iCarLogo">
+                                </div>
+                                <div class="col l4 m4 s12">
+                                    <img src="images/BBB.png" id="bbbPic">
+                                </div>
+                                <div class="col l4 m4 s12">
+                                    <img src="images/COC.png" id="cocPic">
+                                </div>
+                            </div>
                             <div class="row">
                                 <img src="http://legacy.ybsitecenter.com/multi-images/cdr/legacy/var/ap/31600/1348578-mastercard-visa-discover.gif" id="weAccept">
                             </div>
@@ -350,7 +349,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a href='#pageTop' class="btn-floating btn-large waves-effect waves-light red lighten-2" id="toTopButton"><i class="material-icons">arrow_upward</i></a>
+                        <a href='#pageTop' class="btn-floating btn-large waves-effect waves-light red" id="toTopButton"><i class="material-icons">arrow_upward</i></a>
                     </div>
                 </div>
             </div>
@@ -367,8 +366,8 @@
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
-            $('.parallax').parallax();
         });
+
         $("#toTopButton").on('click', function(event) {
             event.preventDefault();
 
@@ -381,8 +380,8 @@
         if (screenWidth <= 600) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1501;
-                var fromTopPxSecondBgChange = 2981;
+                var fromTopPxFirstBgChange = 1551;
+                var fromTopPxSecondBgChange = 3200;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {

@@ -10,7 +10,12 @@
 }
 
 #nav-mobile li a:hover {
-    color: #e57373;
+    color: #d32f2f;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    color: #d32f2f !important;
 }
 
 .card,
@@ -122,7 +127,7 @@ body {
 }
 
 .activeNav {
-    color: #e57373;
+    color: #d32f2f;
 }
 
 #facebookContact,
@@ -167,7 +172,7 @@ body {
 
 .dropdown-content li>a,
 .dropdown-content li>span {
-    color: #e57373 !important;
+    color: black !important;
 }
 
 .dropdown-content li.disabled>span {
@@ -198,8 +203,10 @@ body {
 
 #checkTimes:hover,
 #submitButton:hover {
-    background-color: #ef5350 !important;
-    color: black !important;
+    background-color: #212121 !important;
+    border-color: white !important;
+    border-style: solid;
+    border-width: 1px;
 }
 
 /* end large devices */
@@ -409,7 +416,7 @@ body {
 
     body {
         /*background: #212121;*/
-        background-color: black;
+        background-color: #212121;
     }
 
     .tabList {

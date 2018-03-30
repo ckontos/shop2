@@ -224,6 +224,28 @@ body {
     margin-top: 100px;
 }
 
+#iCarLogo,
+#bbbPic,
+#cocPic {
+    height: 150px;
+    width: 300px;
+}
+
+.businessLogos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1227px) {
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 100px;
+        width: 250px;
+    }
+}
+
 /**********************tablet/mobile view**************************/
 
 @media only screen and (max-width: 1024px) {
@@ -234,6 +256,22 @@ body {
     .img1 {
         background-position: 0 14%;
         height: 320px;
+    }
+
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 100px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 60px;
+        width: 135px;
     }
 }
 
@@ -315,14 +353,9 @@ body {
         width: 110px;
     }
 
-    #iCarLogo {
-        height: 100px;
-        width: 200px;
-    }
-
     #weAccept {
         height: 50px;
-        width: 230px;
+        width: 200px;
     }
 
     #bottomCard {
@@ -364,11 +397,27 @@ body {
         border-bottom-width: 1px;
     }
 
+    .activeNav {
+        color: #e57373;
+    }
+
 }
 
 /**********************Iphone 6/7/8/X small screen materialize**************************/
 
 @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .activeNav {
+        color: #e57373;
+    }
+
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 100px;
+        width: 200px;
+    }
+
     .firstInfo,
     .secondInfo,
     .thirdInfo,
@@ -387,7 +436,7 @@ body {
     }
 
     .fourthInfo {
-        height: 660px;
+        height: 850px;
     }
 
     .img2,
@@ -478,5 +527,21 @@ body {
     #weAccept {
         height: 50px;
         width: 200px;
+    }
+
+    #learnMoreBtn {
+        font-size: 17px;
+    }
+
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 80px;
+        width: 180px;
+    }
+
+    #weAccept {
+        height: 40px;
+        width: 180px;
     }
 }
