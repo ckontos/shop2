@@ -281,7 +281,7 @@
                 <div class="row center" id="servicesDiv">
                     <div class="row">
                         <div class="col l12 m12 s12">
-                            <h2 class="center-align">Services We Offer</h2>
+                            <h2 class="center-align servicesTitle">Services We Offer</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -377,11 +377,62 @@
         });
 
         var screenWidth = window.innerWidth;
-        if (screenWidth <= 600) {
+
+        if (screenWidth > 600 && screenWidth <= 736) {
+            $(window).scroll(function() {
+
+                var fromTopPxFirstBgChange = 1700;
+                var fromTopPxSecondBgChange = 3100;
+                var scrolledFromtop = $(window).scrollTop();
+
+                if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').addClass('secondBg');
+                }
+                else if (scrolledFromtop < fromTopPxFirstBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('thirdBg');
+                }
+                else if (scrolledFromtop >= fromTopPxSecondBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').addClass('thirdBg');
+                }
+                else {
+                    $('body').removeClass('secondBg, thirdBg');
+                }
+            });
+        }
+
+        if (screenWidth <= 600 && screenWidth > 320) {
             $(window).scroll(function() {
 
                 var fromTopPxFirstBgChange = 1551;
-                var fromTopPxSecondBgChange = 3200;
+                var fromTopPxSecondBgChange = 3180;
+                var scrolledFromtop = $(window).scrollTop();
+
+                if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').addClass('secondBg');
+                }
+                else if (scrolledFromtop < fromTopPxFirstBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('thirdBg');
+                }
+                else if (scrolledFromtop >= fromTopPxSecondBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').addClass('thirdBg');
+                }
+                else {
+                    $('body').removeClass('secondBg, thirdBg');
+                }
+            });
+        }
+
+        if (screenWidth <= 320) {
+            $(window).scroll(function() {
+
+                var fromTopPxFirstBgChange = 1551;
+                var fromTopPxSecondBgChange = 3280;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {

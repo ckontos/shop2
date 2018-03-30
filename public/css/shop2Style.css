@@ -403,13 +403,87 @@ body {
 
 }
 
+/**********************Iphone 6/7/8/X landscape view**************************/
+
+@media only screen and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    .firstInfo,
+    .secondInfo,
+    .thirdInfo,
+    .fourthInfo {
+        background: #212121;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        height: 550px;
+        background-image: none;
+    }
+
+    .fourthInfo {
+        height: 650px;
+    }
+
+    #freeEstimate {
+        padding-top: 40px;
+    }
+
+    .servicesTitle {
+        padding-top: 35px;
+    }
+
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop3.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.secondBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop5.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.thirdBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/car.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
 /**********************Iphone 6/7/8/X small screen materialize**************************/
 
 @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
-
-    .activeNav {
-        color: #e57373;
-    }
 
     #iCarLogo,
     #bbbPic,
@@ -425,14 +499,14 @@ body {
         background: #212121;
     }
     .secondInfo {
-        height: 930px;
+        height: 970px;
     }
     #freeEstimate {
         margin-top: 50px;
     }
 
     .thirdInfo {
-        height: 1240px;
+        height: 1260px;
     }
 
     .fourthInfo {
@@ -503,7 +577,7 @@ body {
     }
 
     .thirdInfo {
-        height: 1280px;
+        height: 1310px;
     }
 
     .mapPicMain2 {
@@ -517,7 +591,7 @@ body {
 @media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .secondInfo {
-        height: 1090px;
+        height: 1120px;
     }
 
     .thirdInfo {
