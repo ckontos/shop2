@@ -2,6 +2,10 @@
 
 /* large devices*/
 
+#nav-mobile {
+    margin-right: 9%;
+}
+
 #nav-mobile li a {
     /*margin-top: 15%;*/
     margin-left: 20px;
@@ -53,7 +57,7 @@ h2 {
 }
 
 #navBar {
-    /*padding-bottom: 100px;*/
+    padding-bottom: 200px;
 }
 
 #topLogo {
@@ -63,7 +67,8 @@ h2 {
 }
 
 .reviewCard {
-    background-color: #BB2F1F;
+    background-color: #e53935;
+    border-radius: 20px;
 }
 
 #navMain {
@@ -142,7 +147,7 @@ body {
 
 #briggsLogo {
     margin-left: 10%;
-    margin-bottom: -10%;
+    margin-bottom: 0%;
 
 }
 
@@ -209,9 +214,36 @@ body {
     border-width: 1px;
 }
 
+#mobileNavIcon {
+    margin-left: 49%;
+}
+
 /* end large devices */
 
+@media only screen and (max-width: 1185px) {
+
+    #nav-mobile li a {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+}
+
 /*begin tablets*/
+
+@media only screen and (max-width: 992px) {
+    #navBar {
+        padding-bottom: 100px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 1px;
+        margin-bottom: 10%;
+    }
+
+    #mobileNavIcon {
+        margin-left: 48%;
+    }
+}
 
 @media screen and (max-width: 960px) and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -222,7 +254,7 @@ body {
 
     #briggsLogoContact {
         margin-left: 0%;
-        margin-bottom: -20%;
+        margin-bottom: 0%;
     }
 
     .tabArea {
@@ -259,6 +291,11 @@ body {
 
     #nav-mobile {
         width: 350px;
+    }
+
+    #nav-mobile li a {
+        margin-left: 0;
+        font-size: 15px;
     }
 
 

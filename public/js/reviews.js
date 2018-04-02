@@ -16,7 +16,7 @@ window.onload = function() {
                 }
                 else {
                     var div1 = $("<div>").append(
-                        "<div class='card reviewCard'><div class='card-content white-text red lighten-2'><span class='card-title'>" + result.author + "<br>" + result.date + "</span>" +
+                        "<div class='card reviewCard'><div class='card-content white-text'><span class='card-title'>" + result.author + "<br>" + result.date + "</span>" +
                         "<p>" + result.summary + "</p>" + "<br>" +
 
                         "<a class='white-text right' href='https://www.carwise.com/auto-body-shops/briggs-collision-llc-concord-nc-28027/465039'>View Source</a>" +

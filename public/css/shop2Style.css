@@ -30,17 +30,14 @@ main {
     width: 100%;
 }
 
+#navBar {
+    padding-bottom: 100px;
+}
+
 .card-panel,
 .searchCard {
     opacity: .9;
     border-radius: 10px;
-}
-
-#navBar {
-    padding-bottom: 100px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    border-bottom-width: 1px;
 }
 
 #topLogo {
@@ -159,7 +156,7 @@ body {
 }
 
 #mobileNavIcon {
-    margin-left: 47%;
+    margin-left: 49%;
     margin-top: 5%;
 }
 
@@ -266,15 +263,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 850px) {
-    #iCarLogo,
-    #bbbPic,
-    #cocPic {
-        height: 60px;
-        width: 135px;
-    }
-}
-
 /**********************medium screens defined by materialize**************************/
 
 @media only screen and (max-width: 992px) {
@@ -305,6 +293,22 @@ body {
         margin-top: 3%;
         height: 150px;
         width: 300px;
+    }
+
+    #navBar {
+        padding-bottom: 100px;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 1px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #iCarLogo,
+    #bbbPic,
+    #cocPic {
+        height: 60px;
+        width: 135px;
     }
 }
 
