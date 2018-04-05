@@ -140,7 +140,7 @@ body {
 }
 
 #indexDivOneLogo {
-    margin-top: 125px;
+    padding-top: 125px;
 }
 
 #briggsLogo {
@@ -188,7 +188,7 @@ body {
 }
 
 #servicesDiv {
-    margin-top: 100px;
+    padding-top: 100px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -246,13 +246,15 @@ body {
 /**********************tablet/mobile view**************************/
 
 @media only screen and (max-width: 1024px) {
+
+    #indexDivOneLogo {}
     #indexDivOneCard {
         font-size: 24px;
     }
 
     .img1 {
-        background-position: 0 14%;
-        height: 320px;
+        background-image: none;
+        height: 700px;
     }
 
     #iCarLogo,
@@ -260,6 +262,53 @@ body {
     #cocPic {
         height: 100px;
         width: 200px;
+    }
+
+    .firstInfo,
+    .secondInfo,
+    .thirdInfo,
+    .fourthInfo {
+        background: #212121;
+    }
+
+    .firstInfo {
+        height: 800px;
+    }
+
+    #freeEstimateCard {
+        margin-top: 125px;
+    }
+    .secondInfo {
+        height: 800px;
+    }
+
+    #servicesDiv {
+        padding-top: 100px;
+    }
+
+    .thirdInfo {
+        height: 800px;
+    }
+    .img2,
+    .img3,
+    .img4 {
+        background-image: none;
+    }
+
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop3.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }
 
@@ -367,7 +416,7 @@ body {
     }
 
     .firstInfo {
-        height: 850px;
+        height: 880px;
     }
 
     .secondInfo {
@@ -379,11 +428,11 @@ body {
     }
 
     .thirdInfo {
-        height: 700px;
+        height: 825px;
     }
 
     .fourthInfo {
-        height: 500px;
+        height: 650px;
     }
 
     #servicesDiv {
