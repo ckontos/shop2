@@ -247,14 +247,9 @@ body {
 
 @media only screen and (max-width: 1024px) {
 
-    #indexDivOneLogo {}
-    #indexDivOneCard {
-        font-size: 24px;
-    }
-
     .img1 {
         background-image: none;
-        height: 700px;
+        height: 800px;
     }
 
     #iCarLogo,
@@ -272,23 +267,37 @@ body {
     }
 
     .firstInfo {
-        height: 800px;
+        height: 1400px;
     }
 
-    #freeEstimateCard {
-        margin-top: 125px;
-    }
     .secondInfo {
-        height: 800px;
-    }
-
-    #servicesDiv {
-        padding-top: 100px;
+        height: 1400px;
     }
 
     .thirdInfo {
-        height: 800px;
+        height: 1400px;
     }
+
+    .fourthInfo {
+        height: 650px;
+    }
+
+    #indexDivOneCard {
+        font-size: 32px;
+    }
+
+    #indexDivOneLogo {
+        padding-top: 350px;
+    }
+
+    #freeEstimateCard {
+        margin-top: 400px;
+    }
+
+    #servicesDiv {
+        padding-top: 400px;
+    }
+
     .img2,
     .img3,
     .img4 {
@@ -427,6 +436,14 @@ body {
         margin-top: 100px;
     }
 
+    #freeEstimateCard {
+        margin-top: 125px;
+    }
+
+    #servicesDiv {
+        padding-top: 100px;
+    }
+
     .thirdInfo {
         height: 825px;
     }
@@ -456,6 +473,84 @@ body {
 
 }
 
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .firstInfo {
+        height: 950px;
+    }
+
+    .secondInfo {
+        height: 1100px;
+    }
+
+    .thirdInfo {
+        height: 1100px;
+    }
+
+    #freeEstimateCard {
+        margin-top: 225px;
+    }
+
+    #servicesDiv {
+        padding-top: 225px;
+    }
+
+    #indexDivOneCard {
+        font-size: 28px;
+    }
+
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop3.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.secondBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop5.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.thirdBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/car.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+
 /**********************Iphone 6/7/8/X landscape view**************************/
 
 @media only screen and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -464,6 +559,22 @@ body {
     .thirdInfo,
     .fourthInfo {
         background: #212121;
+    }
+
+    .secondInfo {
+        height: 700px;
+    }
+
+    .thirdInfo {
+        height: 800px;
+    }
+
+    #freeEstimateCard {
+        margin-top: 75px;
+    }
+
+    #servicesDiv {
+        padding-top: 50px;
     }
 
     .img2,
@@ -479,6 +590,10 @@ body {
 
     #freeEstimate {
         padding-top: 40px;
+    }
+
+    #indexDivOneCard {
+        font-size: 20px;
     }
 
     .servicesTitle {
@@ -534,6 +649,13 @@ body {
     }
 }
 
+@media only screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .secondInfo {
+        height: 750px;
+    }
+}
+
 /**********************Iphone 6/7/8/X small screen materialize**************************/
 
 @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -559,7 +681,7 @@ body {
     }
 
     .thirdInfo {
-        height: 1260px;
+        height: 1340px;
     }
 
     .fourthInfo {
@@ -571,6 +693,14 @@ body {
     .img4 {
         height: 550px;
         background-image: none;
+    }
+
+    #freeEstimateCard {
+        margin-top: 50px;
+    }
+
+    #servicesDiv {
+        padding-top: 50px;
     }
 
     body:before {
@@ -625,12 +755,17 @@ body {
 /**********************Galaxy phones if anyone has those anymore**************************/
 
 @media only screen and (max-width: 361px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .firstInfo {
+        height: 825px;
+    }
+
     .secondInfo {
-        height: 960px;
+        height: 1000px;
     }
 
     .thirdInfo {
-        height: 1310px;
+        height: 1400px;
     }
 
     .mapPicMain2 {
@@ -648,7 +783,7 @@ body {
     }
 
     .thirdInfo {
-        height: 1280px;
+        height: 1400px;
     }
 
     #weAccept {
