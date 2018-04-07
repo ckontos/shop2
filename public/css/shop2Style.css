@@ -140,7 +140,7 @@ body {
 }
 
 #indexDivOneLogo {
-    padding-top: 125px;
+    padding-top: 75px;
 }
 
 #briggsLogo {
@@ -172,7 +172,7 @@ body {
 
 #freeEstimateCard {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 #scheduleNowBtn {
@@ -188,7 +188,7 @@ body {
 }
 
 #servicesDiv {
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -302,7 +302,9 @@ body {
     .img3,
     .img4 {
         background-image: none;
+        height: 700px;
     }
+
 
     body:before {
         content: "";
@@ -319,6 +321,55 @@ body {
         -o-background-size: cover;
         background-size: cover;
     }
+
+    body.secondBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop5.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.thirdBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/paint2.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.fourthBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/car.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
 }
 
 /**********************medium screens defined by materialize**************************/
@@ -469,6 +520,54 @@ body {
 
     .activeNav {
         color: #e57373;
+    }
+
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop3.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.secondBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/shop5.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.thirdBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/car.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
 }

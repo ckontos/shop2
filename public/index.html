@@ -378,6 +378,64 @@
 
         var screenWidth = window.innerWidth;
 
+        if (screenWidth > 812 && screenWidth <= 1024) {
+            $(window).scroll(function() {
+
+                var fromTopPxFirstBgChange = 920;
+                var fromTopPxSecondBgChange = 3000;
+                var fromTopPxThirdBgChange = 5100;
+                var scrolledFromtop = $(window).scrollTop();
+
+                if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').removeClass('fourthBg');
+                    $('body').addClass('secondBg');
+                }
+                else if (scrolledFromtop < fromTopPxFirstBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('thirdBg');
+                    $('body').removeClass('fourthBg');
+                }
+                else if (scrolledFromtop >= fromTopPxSecondBgChange && scrolledFromtop < fromTopPxThirdBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('fourthBg');
+                    $('body').addClass('thirdBg');
+                }
+                else if (scrolledFromtop >= fromTopPxThirdBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').addClass('fourthBg');
+                }
+                else {
+                    $('body').removeClass('secondBg, thirdBg, fourthBg');
+                }
+            });
+        }
+
+        if (screenWidth > 768 && screenWidth <= 812) {
+            $(window).scroll(function() {
+
+                var fromTopPxFirstBgChange = 1900;
+                var fromTopPxSecondBgChange = 3650;
+                var scrolledFromtop = $(window).scrollTop();
+
+                if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
+                    $('body').removeClass('thirdBg');
+                    $('body').addClass('secondBg');
+                }
+                else if (scrolledFromtop < fromTopPxFirstBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').removeClass('thirdBg');
+                }
+                else if (scrolledFromtop >= fromTopPxSecondBgChange) {
+                    $('body').removeClass('secondBg');
+                    $('body').addClass('thirdBg');
+                }
+                else {
+                    $('body').removeClass('secondBg, thirdBg');
+                }
+            });
+        }
+
         if (screenWidth > 736 && screenWidth <= 768) {
             $(window).scroll(function() {
 
@@ -431,8 +489,8 @@
         if (screenWidth <= 600 && screenWidth > 320) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1551;
-                var fromTopPxSecondBgChange = 3180;
+                var fromTopPxFirstBgChange = 1650;
+                var fromTopPxSecondBgChange = 3225;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
