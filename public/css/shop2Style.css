@@ -15,6 +15,12 @@ main {
     color: #e57373;
 }
 
+.side-bar-background {
+    background-image: url("../images/briggsLogo.jpeg");
+    width: 300px;
+    height: 125px;
+}
+
 .activeNav {
     color: #e57373;
 }

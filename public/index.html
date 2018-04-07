@@ -31,10 +31,28 @@
         <!--    sideNav hidden on large scrrens-->
 
         <ul id="slide-out" class="side-nav hide-on-large-only grey darken-4">
+            <div class="side-bar-background"></div>
+
             <li><a href="/index" class="red-text text-lighten-2" id="home">Home</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
             <li><a href="/services" class="white-text" id="services">Services</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
             <li><a href="/contact" class="white-text" id="contact">Contact Us</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
             <li><a href="/reviews" class="white-text" id="reviews">Reviews</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
         </ul>
 
         <!--    end side nav-->
@@ -64,7 +82,7 @@
                         <div class="col m12 s12 center">
                             <ul class="collapsible popout" data-collapsible="accordion">
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">add_location</i>Concord Location</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">add_location</i>Concord Location</div>
 
                                     <div class="collapsible-body white black-text center">
                                         <p class="center">3900 Concord Pkwy S, Concord, NC 28027
@@ -75,14 +93,14 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">call</i>Call</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">call</i>Call</div>
 
                                     <div class="collapsible-body white black-text left-align">
                                         <p class="center">704-782-4569</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">timer</i>Hours</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">timer</i>Hours</div>
 
                                     <div class="collapsible-body white black-text left-align">
                                         <p class="center">Monday - Friday: 8 am - 6 pm <br> Saturday: Closed <br> Sunday: Closed
@@ -96,7 +114,7 @@
                         <div class="col m12 s12 center">
                             <ul class="collapsible popout" id="popout2" data-collapsible="accordion">
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">add_location</i>Charlotte Location</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">add_location</i>Charlotte Location</div>
 
                                     <div class="collapsible-body white black-text center">
                                         <p class="center">8130 Wilkinson Blvd, Charlotte, NC 28214
@@ -107,14 +125,14 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">call</i>Call</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">call</i>Call</div>
 
                                     <div class="collapsible-body white black-text left-align">
                                         <p class="center">980-938-53550</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="collapsible-header black-text"><i class="material-icons">timer</i>Hours</div>
+                                    <div class="collapsible-header red lighten-2 white-text"><i class="material-icons">timer</i>Hours</div>
 
                                     <div class="collapsible-body white black-text left-align">
                                         <p class="center">Monday - Friday: 8 am - 6 pm <br>Saturday: Closed<br> Sunday: Closed
@@ -414,7 +432,7 @@
         if (screenWidth > 768 && screenWidth <= 812) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1900;
+                var fromTopPxFirstBgChange = 1790;
                 var fromTopPxSecondBgChange = 3650;
                 var scrolledFromtop = $(window).scrollTop();
 
@@ -489,7 +507,7 @@
         if (screenWidth <= 600 && screenWidth > 320) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1650;
+                var fromTopPxFirstBgChange = 1805;
                 var fromTopPxSecondBgChange = 3225;
                 var scrolledFromtop = $(window).scrollTop();
 
