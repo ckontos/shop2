@@ -61,21 +61,17 @@
         <div class="indexContainer">
 
             <!--=========================== FIRST BG IMAGE ====================================-->
-            <div class="img1 hide-on-med-and-down"></div>
+            <div class="img1">
+                <div class="img1-text white-text center">
+                    <span class="img-text-main">Briggs Collision</span><br>
+                    <span class="img-text-secondary">Secondary Text Goes Here</span>
+                </div>
+            </div>
 
             <!--=========================== FIRST DIV CONTENTS ====================================-->
             <div class="info firstInfo">
-                <div class="row center hide-on-large-only">
-                    <div class="row center">
-                        <div class="col m12 s12">
-                            <img id="briggsLogoMobile" src="./images/briggslogo3.png">
-                        </div>
-                    </div>
-                    <div class="row center">
-                        <div class="col m12 s12">
-                            <img id="briggsShopMobile" src="./images/briggs.png">
-                        </div>
-                    </div>
+                <div class="row center hide-on-large-only mobile-collapsible">
+
                     <!--put info for stores here-->
                     <div class="row">
                         <!--concord location-->
@@ -169,6 +165,9 @@
             <!--=========================== 2ND BG IMAGE ====================================-->
 
             <div class="img2"></div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/shop5.jpg"></div>
+            </div>
 
             <!--=========================== 2ND DIV CONTENTS ====================================-->
             <div class="info secondInfo">
@@ -293,6 +292,9 @@
             <!--=========================== 3RD BG IMAGE ====================================-->
 
             <div class="img3"></div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/paint2.jpg"></div>
+            </div>
 
             <!--=========================== 3RD DIV CONTENTS ====================================-->
             <div class="info thirdInfo">
@@ -339,6 +341,9 @@
             <!--=========================== 4TH BG IMAGE ====================================-->
 
             <div class="img4"></div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/car.jpg"></div>
+            </div>
 
             <!--=========================== 4TH DIV CONTENTS ====================================-->
             <div class="info fourthInfo">
@@ -384,6 +389,16 @@
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
+            $('.parallax').parallax();
+
+            if (screenWidth > 760 && screenWidth <= 1366) {
+                $('.parallax-container').show();
+                $('.img2, .img3, .img4').hide();
+            }
+            else {
+                $('.parallax-container').hide();
+
+            }
         });
 
         $("#toTopButton").on('click', function(event) {
@@ -482,8 +497,8 @@
         if (screenWidth > 600 && screenWidth <= 736) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1700;
-                var fromTopPxSecondBgChange = 3100;
+                var fromTopPxFirstBgChange = 2100;
+                var fromTopPxSecondBgChange = 3575;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
@@ -507,8 +522,8 @@
         if (screenWidth <= 600 && screenWidth > 320) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1805;
-                var fromTopPxSecondBgChange = 3225;
+                var fromTopPxFirstBgChange = 2000;
+                var fromTopPxSecondBgChange = 3550;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {
@@ -532,8 +547,8 @@
         if (screenWidth <= 320) {
             $(window).scroll(function() {
 
-                var fromTopPxFirstBgChange = 1551;
-                var fromTopPxSecondBgChange = 3280;
+                var fromTopPxFirstBgChange = 2200;
+                var fromTopPxSecondBgChange = 3650;
                 var scrolledFromtop = $(window).scrollTop();
 
                 if (scrolledFromtop > fromTopPxFirstBgChange && scrolledFromtop < fromTopPxSecondBgChange) {

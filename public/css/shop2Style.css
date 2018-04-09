@@ -91,14 +91,8 @@ body {
     background-color: #212121;
 }
 
-.img1 {
-    height: 587px;
-    background-attachment: fixed;
-    background-position: 0 60%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
+.img1,
 .img2,
 .img3,
 .img4 {
@@ -109,12 +103,41 @@ body {
     background-size: cover;
 }
 
+.img1:before {
+    position: absolute;
+    content: " ";
+    top: 20;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    display: block;
+    z-index: 0;
+    background-color: #212121;
+    opacity: .8;
+}
+
+.img1-text {
+    opacity: 0.9;
+    padding-top: 10%;
+}
+
+.img-text-main {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 98px;
+}
+
+.img-text-secondary {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 72px;
+}
+
+
 .img1 {
-    background-image: url("../images/briggs.png");
+    background-image: url("../images/shop3.jpg");
 }
 
 .img2 {
-    background-image: url("../images/shop3.jpg");
+    background-image: url("../images/shop5.jpg");
 }
 
 .img3 {
@@ -239,6 +262,29 @@ body {
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1366px) {
+
+    .img1 {
+        height: 700px;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img1:before {
+        position: absolute;
+        content: " ";
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        display: block;
+        z-index: 0;
+        background-color: #212121;
+        opacity: .7;
+    }
+}
 
 @media only screen and (max-width: 1227px) {
     #iCarLogo,
@@ -252,11 +298,6 @@ body {
 /**********************tablet/mobile view**************************/
 
 @media only screen and (max-width: 1024px) {
-
-    .img1 {
-        background-image: none;
-        height: 800px;
-    }
 
     #iCarLogo,
     #bbbPic,
@@ -273,15 +314,15 @@ body {
     }
 
     .firstInfo {
-        height: 1400px;
+        height: 875px;
     }
 
     .secondInfo {
-        height: 1400px;
+        height: 825px;
     }
 
     .thirdInfo {
-        height: 1400px;
+        height: 875px;
     }
 
     .fourthInfo {
@@ -293,87 +334,47 @@ body {
     }
 
     #indexDivOneLogo {
-        padding-top: 350px;
+        padding-top: 125px;
     }
 
     #freeEstimateCard {
-        margin-top: 400px;
+        margin-top: 150px;
     }
 
     #servicesDiv {
-        padding-top: 400px;
+        padding-top: 125px;
     }
 
-    .img2,
-    .img3,
-    .img4 {
-        background-image: none;
+    .img1 {
         height: 700px;
-    }
-
-
-    body:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop3.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
-    body.secondBg:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop5.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .img1 {
+        background-image: url("../images/shop3.jpg");
     }
 
-    body.thirdBg:before {
-        content: "";
-        display: block;
-        position: fixed;
+    .img1:before {
+        position: absolute;
+        content: " ";
+        top: 20;
         left: 0;
-        top: 0;
         width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/paint2.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        height: 700px;
+        display: block;
+        z-index: 0;
+        background-color: #212121;
+        opacity: .7;
     }
 
-    body.fourthBg:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/car.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .img1-text {
+        opacity: 0.9;
+        padding-top: 10%;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 98px;
     }
 
 }
@@ -388,10 +389,6 @@ body {
 
     .secondInfo {
         height: 700px;
-    }
-
-    #freeEstimate {
-        margin-top: 100px;
     }
 
     .thirdInfo {
@@ -482,15 +479,15 @@ body {
     }
 
     .firstInfo {
-        height: 880px;
+        height: 540px;
+    }
+
+    .mobile-collapsible {
+        padding-top: 50px;
     }
 
     .secondInfo {
         height: 700px;
-    }
-
-    #freeEstimate {
-        margin-top: 100px;
     }
 
     #freeEstimateCard {
@@ -507,10 +504,6 @@ body {
 
     .fourthInfo {
         height: 650px;
-    }
-
-    #servicesDiv {
-        margin-top: 50px;
     }
 
     #bottomCard {
@@ -537,7 +530,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url("../images/shop3.jpg") no-repeat center center;
+        background: url("../images/shop5.jpg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -553,7 +546,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url("../images/shop5.jpg") no-repeat center center;
+        background: url("../images/paint2.jpg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -582,75 +575,52 @@ body {
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 950px;
+        height: 650px;
     }
 
     .secondInfo {
-        height: 1100px;
+        height: 900px;
     }
 
     .thirdInfo {
-        height: 1100px;
+        height: 900px;
     }
 
     #freeEstimateCard {
-        margin-top: 225px;
+        margin-top: 125px;
     }
 
     #servicesDiv {
-        padding-top: 225px;
+        padding-top: 125px;
     }
 
     #indexDivOneCard {
         font-size: 28px;
     }
 
-    body:before {
-        content: "";
-        display: block;
-        position: fixed;
+    .img1:before {
+        position: absolute;
+        content: " ";
+        top: 20;
         left: 0;
-        top: 0;
         width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop3.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        height: 70%;
+        display: block;
+        z-index: 0;
+        background-color: #212121;
+        opacity: .7;
     }
 
-    body.secondBg:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop5.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .img-text-main {
+        font-size: 72px;
     }
 
-    body.thirdBg:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/car.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .img-text-secondary {
+        font-size: 48px;
+    }
+
+    .mobile-collapsible {
+        padding-top: 100px;
     }
 
 }
@@ -659,12 +629,6 @@ body {
 /**********************Iphone 6/7/8/X landscape view**************************/
 
 @media only screen and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
-    .firstInfo,
-    .secondInfo,
-    .thirdInfo,
-    .fourthInfo {
-        background: #212121;
-    }
 
     .secondInfo {
         height: 700px;
@@ -705,52 +669,17 @@ body {
         padding-top: 35px;
     }
 
-    body:before {
-        content: "";
-        display: block;
-        position: fixed;
+    .img1:before {
+        position: absolute;
+        content: " ";
+        top: 20;
         left: 0;
-        top: 0;
         width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop3.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    body.secondBg:before {
-        content: "";
+        height: 700px;
         display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/shop5.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    body.thirdBg:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url("../images/car.jpg") no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        z-index: 0;
+        background-color: #212121;
+        opacity: .7;
     }
 }
 
@@ -778,6 +707,10 @@ body {
     .fourthInfo {
         background: #212121;
     }
+
+    .firstInfo {
+        height: 600px;
+    }
     .secondInfo {
         height: 970px;
     }
@@ -793,6 +726,9 @@ body {
         height: 850px;
     }
 
+    .img1 {
+        height: 700px;
+    }
     .img2,
     .img3,
     .img4 {
@@ -808,16 +744,28 @@ body {
         padding-top: 50px;
     }
 
+    .img1-text {
+        line-height: 50px;
+        padding-top: 30%;
+    }
+    .img-text-main {
+        font-size: 52px;
+    }
+
+    .img-text-secondary {
+        font-size: 32px;
+    }
+
     body:before {
         content: "";
         display: block;
-        position: fixed;
+        position: scroll;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url("../images/shop3.jpg") no-repeat center center;
+        background: url("../images/shop5.jpg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -833,7 +781,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url("../images/shop5.jpg") no-repeat center center;
+        background: url("../images/paint2.jpg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -857,12 +805,22 @@ body {
     }
 }
 
+@media only screen and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .secondInfo {
+        height: 750px;
+    }
+
+    .thirdInfo {
+        height: 1200px;
+    }
+}
+
 /**********************Galaxy phones if anyone has those anymore**************************/
 
 @media only screen and (max-width: 361px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 825px;
+        height: 575px;
     }
 
     .secondInfo {
@@ -882,6 +840,14 @@ body {
 /**********************older iphone models(5 and under)**************************/
 
 @media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .firstInfo {
+        height: 550px;
+    }
+
+    .mobile-collapsible {
+        padding-top: 75px;
+    }
 
     .secondInfo {
         height: 1120px;
