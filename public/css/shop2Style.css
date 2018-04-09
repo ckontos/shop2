@@ -714,9 +714,6 @@ body {
     .secondInfo {
         height: 970px;
     }
-    #freeEstimate {
-        margin-top: 50px;
-    }
 
     .thirdInfo {
         height: 1340px;
@@ -813,6 +810,44 @@ body {
     .thirdInfo {
         height: 1200px;
     }
+}
+
+@media only screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .firstInfo {
+        height: 600px;
+    }
+    .secondInfo {
+        height: 970px;
+    }
+
+    .thirdInfo {
+        height: 1290px;
+    }
+
+    .fourthInfo {
+        height: 850px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .firstInfo {
+        height: 600px;
+    }
+    .secondInfo {
+        height: 970px;
+    }
+
+    .thirdInfo {
+        height: 1340px;
+    }
+
+    .fourthInfo {
+        height: 850px;
+    }
+
 }
 
 /**********************Galaxy phones if anyone has those anymore**************************/
