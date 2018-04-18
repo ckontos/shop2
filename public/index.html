@@ -31,7 +31,10 @@
         <!--    sideNav hidden on large scrrens-->
 
         <ul id="slide-out" class="side-nav hide-on-large-only grey darken-4">
-            <div class="side-bar-background"></div>
+            <div class="side-bar-background">
+                <img src="./images/briggslogo3.1.png">
+            </div>
+            <div class="divider"></div>
 
             <li><a href="/index" class="red-text text-lighten-2" id="home"><i class="material-icons white-text">home</i>Home</a></li>
             <li>
@@ -63,8 +66,8 @@
             <!--=========================== FIRST BG IMAGE ====================================-->
             <div class="img1">
                 <div class="img1-text white-text center">
-                    <span class="img-text-main">Briggs Collision</span><br>
-                    <span class="img-text-secondary">Secondary Text Goes Here</span>
+                    <span class="hide-on-large-only"><img class="logo-overlay" src="images/briggslogo3.png"></span><br>
+                    <span class="img-text-main">The Right Decision Is<br>Briggs Collision</span><br>
                 </div>
             </div>
 
@@ -165,9 +168,9 @@
             <!--=========================== 2ND BG IMAGE ====================================-->
 
             <div class="img2"></div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/shop5.jpg"></div>
-            </div>
+            <!--<div class="parallax-container">-->
+            <!--    <div class="parallax"><img src="images/shop5.jpg"></div>-->
+            <!--</div>-->
 
             <!--=========================== 2ND DIV CONTENTS ====================================-->
             <div class="info secondInfo">
@@ -292,9 +295,9 @@
             <!--=========================== 3RD BG IMAGE ====================================-->
 
             <div class="img3"></div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/paint2.jpg"></div>
-            </div>
+            <!--<div class="parallax-container">-->
+            <!--    <div class="parallax"><img src="images/paint2.jpg"></div>-->
+            <!--</div>-->
 
             <!--=========================== 3RD DIV CONTENTS ====================================-->
             <div class="info thirdInfo">
@@ -341,9 +344,9 @@
             <!--=========================== 4TH BG IMAGE ====================================-->
 
             <div class="img4"></div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/car.jpg"></div>
-            </div>
+            <!--<div class="parallax-container">-->
+            <!--    <div class="parallax"><img src="images/car.jpg"></div>-->
+            <!--</div>-->
 
             <!--=========================== 4TH DIV CONTENTS ====================================-->
             <div class="info fourthInfo">
@@ -389,15 +392,11 @@
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $(".button-collapse").sideNav();
-            $('.parallax').parallax();
+            // $('.parallax').parallax();
 
             if (screenWidth > 760 && screenWidth <= 1366) {
-                $('.parallax-container').show();
+                // $('.parallax-container').show();
                 $('.img2, .img3, .img4').hide();
-            }
-            else {
-                $('.parallax-container').hide();
-
             }
         });
 

@@ -15,12 +15,6 @@ main {
     color: #e57373;
 }
 
-.side-bar-background {
-    background-image: url("../images/briggsLogo.jpeg");
-    width: 300px;
-    height: 125px;
-}
-
 .activeNav {
     color: #e57373;
 }
@@ -124,11 +118,6 @@ body {
 .img-text-main {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 98px;
-}
-
-.img-text-secondary {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 72px;
 }
 
 
@@ -284,6 +273,18 @@ body {
         background-color: #212121;
         opacity: .7;
     }
+
+    .secondInfo {
+        background: linear-gradient(#e0e0e0, #212121, #212121, #212121, #212121, #212121, #212121, #212121, #212121, #e0e0e0);
+    }
+
+    .fourthInfo {
+        background: linear-gradient(#e0e0e0, #212121, #212121, #212121, #212121, #212121, #212121);
+    }
+
+    #bottomCard {
+        margin-top: 150px;
+    }
 }
 
 @media only screen and (max-width: 1227px) {
@@ -311,6 +312,14 @@ body {
     .thirdInfo,
     .fourthInfo {
         background: #212121;
+    }
+
+    .secondInfo {
+        background: linear-gradient(#e0e0e0, #212121, #212121, #212121, #212121, #212121, #212121, #212121, #212121, #e0e0e0);
+    }
+
+    .fourthInfo {
+        background: linear-gradient(#e0e0e0, #212121, #212121, #212121, #212121, #212121, #212121);
     }
 
     .firstInfo {
@@ -384,7 +393,7 @@ body {
 @media only screen and (max-width: 992px) {
 
     .firstInfo {
-        height: 950px;
+        height: 540px;
     }
 
     .secondInfo {
@@ -392,7 +401,11 @@ body {
     }
 
     .thirdInfo {
-        height: 700px;
+        height: 825px;
+    }
+
+    #indexDivOneCard {
+        font-size: 20px;
     }
 
     #briggsLogoMobile {
@@ -427,6 +440,11 @@ body {
 /**********************IPAD query**************************/
 
 @media only screen and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .img-text-main {
+        font-size: 72px;
+        line-height: 10px;
+    }
 
     #facebookMain {
         margin-top: 180%;
@@ -699,6 +717,11 @@ body {
     #cocPic {
         height: 100px;
         width: 200px;
+    }
+
+    .logo-overlay {
+        width: 325px;
+        height: 200px;
     }
 
     .firstInfo,

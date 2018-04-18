@@ -17,12 +17,6 @@
     color: #d32f2f;
 }
 
-.side-bar-background {
-    background-image: url("../images/briggsLogo.jpeg");
-    width: 300px;
-    height: 125px;
-}
-
 .tabs .tab a:hover,
 .tabs .tab a.active {
     color: #d32f2f !important;
@@ -148,8 +142,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
-
 
 #briggsLogo {
     margin-left: 10%;
