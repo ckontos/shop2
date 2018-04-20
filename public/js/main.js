@@ -1,4 +1,4 @@
-window.onload = function() { // When you click the run-scrape button
+window.onload = function() {
 
  
   // run a call to delete the articles
@@ -10,7 +10,10 @@ window.onload = function() { // When you click the run-scrape button
         method: "GET",
         url: "/scrape"
       }).done(function(data) {
-    
+      $.ajax({// then run the scrape
+        method: "GET",
+        url: "/scrape2"
+      })
       });
     
     });
