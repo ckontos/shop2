@@ -637,10 +637,6 @@ body {
         font-size: 48px;
     }
 
-    .mobile-collapsible {
-        padding-top: 100px;
-    }
-
 }
 
 
@@ -693,7 +689,7 @@ body {
         top: 20;
         left: 0;
         width: 100%;
-        height: 700px;
+        height: 600px;
         display: block;
         z-index: 0;
         background-color: #212121;
@@ -747,7 +743,7 @@ body {
     }
 
     .img1 {
-        height: 700px;
+        height: 600px;
     }
     .img2,
     .img3,
@@ -838,7 +834,7 @@ body {
 @media only screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 600px;
+        height: 480px;
     }
     .secondInfo {
         height: 970px;
@@ -857,7 +853,7 @@ body {
 @media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 600px;
+        height: 480px;
     }
     .secondInfo {
         height: 970px;
@@ -878,7 +874,7 @@ body {
 @media only screen and (max-width: 361px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 575px;
+        height: 480px;
     }
 
     .secondInfo {
@@ -900,11 +896,7 @@ body {
 @media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
 
     .firstInfo {
-        height: 550px;
-    }
-
-    .mobile-collapsible {
-        padding-top: 75px;
+        height: 480px;
     }
 
     .secondInfo {
