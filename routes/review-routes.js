@@ -125,7 +125,7 @@ app.delete("/review/deleteAll", function(req, res) {
   Review.remove( { } ).then(function(err) {
     res.json(err);
   })
-  
+}); 
   
   
   // Route for getting all Reviews from the db
@@ -144,11 +144,6 @@ app.get("/review", function(req, res) {
 });
 
   
-    
-});
-
-
-
 
 
 }
