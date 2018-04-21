@@ -4,8 +4,8 @@ window.onload = function() {
         method: "GET",
         url: "/review",
     }).done(function(data) {
-        getStuff(data)
-    })
+        getStuff(data);
+    });
 
     function getStuff(data) {
         if (data.length !== 0) {
@@ -34,5 +34,5 @@ window.onload = function() {
 
     }
 
-  
+
 }
